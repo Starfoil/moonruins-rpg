@@ -1,0 +1,5 @@
+01, Quest for 50 Iron, 0
+iron, 01, 50
+1, 1, 500
+This is the description of the Banana quest.
+END

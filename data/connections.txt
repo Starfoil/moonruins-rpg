@@ -1,0 +1,28 @@
+Clearing, Oldburry, 1, 5
+END
+Oldburry, Fields, 1, 8
+END
+Fields, Farms, 0, 12
+END
+Farms, Stonecreek, 0, 23
+END
+Fields, Forest, 1, 18
+END
+Forest, Oakcamp, 1, 22
+END
+Stonecreek, Hills, 0, 14
+END
+Hills, Peak, 0, 7
+END
+Mountains, Peak, 0, 34
+END
+Mountains, Mines, 0, 85
+END
+Fields, Mines, 0, 10
+END
+Mountains, Goldvalley, 0, 36
+END
+Goldvalley, Ravine, 0, 55
+END
+Ravine, Volcano, 0, 222
+END

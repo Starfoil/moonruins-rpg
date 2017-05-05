@@ -1,0 +1,159 @@
+02, Boris, 0
+Boris, the Wanderer
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+Deprived of his role as a potter and driven out of his home village after it was raided by pillaging 
+bandits years ago, Boris had lost everything he had lived for.Now traveling the roads beyond the 
+reach of civilization, Boris has committed himself to a life of pointless wandering in the hopes 
+that one day his life might be rebuilt. Now with nothing in hand and living the last couple years 
+on the road, Boris can only see himself as an unguided scavenger and perhaps a wary messenger, 
+giving warning to those who wish to travel these uncharted roads.
+END
+03, Larry, 0
+Larry, the Adventurer
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+At the age of 9, Larry had lost his father to a ravaging disease which had plagued his village for years.
+A few years later and his mother had contracted the very same disease. Now at the age of 12, Larry is doing 
+the best he could to care for his ill mother at home. One day Larry had ran into a magical seer whom had 
+promised Larry a permanent cure for his mother at the expense of a magical herb. Befallen with all these 
+turns of unfortunate events, Larry has decided against his will to follow the strange words of the seer 
+and had left his home village in hopes of finding the one herb which would save his dying mother. 
+END
+04, Kyle, 0
+Kyle, the Townsman
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+Having come from a nearby village, Kyle is a single yet well-spirited middle-aged man. Living at his village 
+for the last decade, Kyle knows all the ins and outs of the village and had travelled the outskirts numerous times.
+He now works as a tanner and is thoroughly content with his simple life, although there is one thing that bothers him.
+Having walked the outskirts, Kyle had occasionally heard some strange noises while wandering amidst the trees at 
+night. He knows not of what it is nor where it’s coming from, but the noises are eerie enough to sometimes keep 
+him awake at night.
+END
+05, Sam, 0
+Sam, the Farmer
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+For the past couple years, farming had become increasingly more difficult as the seasons had grown harsher and 
+had become more unpredictable. Sam had felt the severity of this strange occurrence which has befallen on the 
+climate for reasons he knows not. As the crop yields shrink and his pockets baring the consequences of so, Sam 
+is desperately looking for a way out. Farming had become no longer profitable and with no other choice at hand, 
+Sam is forced to travel to the village in hopes of finding a more decent living.
+END
+06, Gloria, 0
+Gloria, the Herbalist
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+Gloria has a secret she refuses to share with anyone. As the village herbalist, Gloria is tasked with handling 
+the village reagents and herbs which she harvests every morning from the outskirt of town. One early morning, 
+Gloria had stumbled across something she had never seen before. A bright shiny gemstone lodged in the dirt beneath 
+the cover of an oak tree. Returning to the village, Gloria had locked up this mysterious gemstone beneath her 
+floorboards afraid that it held some monumental wealth in which people would do anything for.
+END
+07, Tam, 0
+Tam, the Miner
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+END
+08, Sid, 0
+Sid, the Smith
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+END
+09, Sum, 1
+Sum, the Seer
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+Little is known about Sum the Seer but people have described him as a strange old man known to wander around 
+the forest sometimes stopping at the village to inspect the skies above. The villagers are welcoming at his 
+presence but never giving second thoughts as to ask him of his nature. He rarely speaks to the villagers and 
+when he does, his words become riddles. They all know that this old man knows something they don’t, but nobody 
+bothers to ask what it is. 
+END
+10, Alex, 0
+Alex, the Alchemist
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+END
+11, Dewbore, 0
+Dewbore, the Hunter
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+END
+12, Ivan, 0
+Ivan, the Fool
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+END
+13, Penn, 0
+Penn, the Lost Child
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+END
+14, Cira, 0
+Cira, the Innkeeper
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+END
+15, Cheryl, 0
+Cheryl, the Priestess
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+END
+16, Merlin, 0
+Merlin, the Wizard
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+END
+17, Nelly, 0
+Nelly, the Warrior
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+END
+18, Petomo, 0
+Petomo, the Pirate
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+END
+19, Ninefold, 0
+Ninefold, the Thief
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+0, 0, 0, 0
+END

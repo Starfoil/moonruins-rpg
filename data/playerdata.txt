@@ -1,0 +1,45 @@
+Grayson
+Clearing
+0, 0, 22
+0, 0, 0, 0
+0, 0
+Dirt, 138, 0, 0, 0, 0
+Stone, 0, 0, 0, 0, 0
+Oakbark, 0, 0, 0, 0, 0
+Gravel, 0, 0, 0, 0, 0
+Clay, 0, 0, 0, 0, 0
+Leather, 0, 0, 0, 0, 0
+Maplebark, 0, 0, 0, 0, 0
+Granite, 0, 0, 0, 0, 0
+Fur, 0, 0, 0, 0, 0
+Iron, 0, 0, 0, 0, 0
+Cotton, 0, 0, 0, 0, 0
+Lapis, 0, 0, 0, 0, 0
+Steel, 0, 0, 0, 0, 0
+Pinebark, 0, 0, 0, 0, 0
+Snakeskin, 0, 0, 0, 0, 0
+NA, 0, 0, 0, 0, 0
+Quartz, 0, 0, 0, 0, 0
+NA, 0, 0, 0, 0, 0
+NA, 0, 0, 0, 0, 0
+Lionskin, 0, 0, 0, 0, 0
+Obsidian, 0, 0, 0, 0, 0
+Ebonbark, 0, 0, 0, 0, 0
+Sharkskin, 0, 0, 0, 0, 0
+Magmanite, 0, 0, 0, 0, 0
+Sagebark, 0, 0, 0, 0, 0
+Dragoscales, 0, 0, 0, 0, 0
+Corruption, 0, 0, 0, 0, 0
+Elderbark, 0, 0, 0, 0, 0
+Soulscales, 0, 0, 0, 0, 0
+Moondust, 0, 0, 0, 0, 0
+Cosmic Dust, 0, 0, 0, 0, 0
+ENDRES
+0, 0, 102, 0, 0, 0
+102
+5
+16
+7
+ENDITM
+8, 0, 0
+END

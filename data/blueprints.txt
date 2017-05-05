@@ -1,0 +1,11 @@
+103
+cotton, 0, 10
+END
+104
+cotton, 0, 25
+cotton, 1, 1
+END
+105
+cotton, 0, 100
+cotton, 1, 5
+END

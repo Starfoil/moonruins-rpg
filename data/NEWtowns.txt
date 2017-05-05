@@ -1,0 +1,41 @@
+Oldburry, 0, 5, 0, 0
+2, 40
+3, 40
+8, 40
+ENDINN
+5
+7
+8
+9
+11
+15
+16
+ENDSHOP
+1
+END
+Stonecreek, 5, 15, 7, 0
+5, 100
+ENDINN
+104
+106
+108
+109
+5
+6
+7
+ENDSHOP
+END
+Oakcamp, 5, 8, 2, 1
+14, 100
+ENDINN
+102
+ENDSHOP
+END
+Goldvalley, 10, 18, 9, 3
+16, 100
+ENDINN
+134
+128
+141
+ENDSHOP
+END
