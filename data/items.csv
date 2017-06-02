@@ -1,263 +1,261 @@
-1,null,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-2,Ring of Newcoming,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-3,Broken Ring,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-4,Rusted Brass Ring,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-5,Dusty Brass Ring,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-6,Simple Ring,0,0,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-7,Peasant's Ring,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-8,Dusty Bronze Ring,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-9,Basic Bronze Ring,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-10,Dirty Ring,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-11,Unwritten Ring,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-12,Ring of Stone,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-13,Cracked Ring,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-14,Villager's Ring,0,0,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-15,Dusty Copper Ring,0,0,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-16,Basic Copper Ring,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-17,Cheap Gold Ring,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-18,Scratched Ring,0,0,17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-19,Smith's Ring,0,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-20,Ring of Nature,0,0,30,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-21,The Thief's Lucky Ring,0,0,50,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-22,The Gatherer's Ring,0,0,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-23,The Lost Ring,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-24,Banded Ring,0,0,30,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-25,Ring of Earth,0,0,75,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-26,Dusty Clay Ring,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-27,Basic Clay Ring,0,0,40,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-28,Forged Clay Ring,0,0,65,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-29,Well-Forged Clay Ring,0,0,80,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-30,The Chaser's Ring,0,0,75,35,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-31,Ring of the Gatekeeper,0,0,45,45,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-32,Ring of Decay,0,0,25,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-33,Dusty Iron Ring,0,0,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-34,Basic Iron Ring,0,0,50,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-35,Forged Iron Ring,0,0,75,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-36,Well-Forged Iron Ring,0,0,100,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-37,Ring of Void,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-38,Ring of Strength,0,0,350,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-39,The Lost Ring,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-40,Lucky Ring,0,0,400,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-41,Forged Gold Ring,0,0,160,50,10,0,0,0,0,0,0,0,0,0,0,0,0,0
-42,Well-Forged Gold Ring,0,0,225,75,20,0,0,0,0,0,0,0,0,0,0,0,0,0
-43,Relenting Gold Ring,0,0,275,100,30,0,0,0,0,0,0,0,0,0,0,0,0,0
-44,Ring of the Skies,0,0,333,33,33,0,0,0,0,0,0,0,0,0,0,0,0,0
-45,Ring of Glory,0,0,120,120,60,0,0,0,0,0,0,0,0,0,0,0,0,0
-46,Ring of Crows,0,0,222,111,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-47,Forged Steel Ring,0,0,180,75,25,0,0,0,0,0,0,0,0,0,0,0,0,0
-48,Well-Forged Steel Ring,0,0,240,120,40,0,0,0,0,0,0,0,0,0,0,0,0,0
-49,Relenting Steel Ring,0,0,300,150,50,0,0,0,0,0,0,0,0,0,0,0,0,0
-50,Ring of Fire,0,0,500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-51,Ring of Ice,0,0,500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-52,Ring of Treachery,0,0,0,0,85,0,0,0,0,0,0,0,0,0,0,0,0,0
-53,Frosted Ring,0,0,240,100,35,0,0,0,0,0,0,0,0,0,0,0,0,0
-54,Ring of the Moon,0,0,200,150,50,0,0,0,0,0,0,0,0,0,0,0,0,0
-55,Ring of the Sun,0,0,200,150,50,0,0,0,0,0,0,0,0,0,0,0,0,0
-56,Volcanic Ring,0,0,600,200,100,1000,0,0,0,0,0,0,0,0,0,0,0,0
-57,The One Ring,0,0,2500,0,0,1000,0,0,0,0,0,0,0,0,0,0,0,0
-58,Abyssal Ring,0,0,0,0,0,7500,0,0,0,0,0,0,0,0,0,0,0,0
-59,Ring of the Forbidden,0,0,1000,500,250,0,0,0,0,0,0,0,0,0,0,0,0,0
-60,Relenting Obsidian Ring,0,0,500,200,100,1000,0,0,0,0,0,0,0,0,0,0,0,0
-61,Unbreakable Obsidian Ring,0,0,800,400,175,3000,0,0,0,0,0,0,0,0,0,0,0,0
-62,Heaven's Ring,0,0,600,200,140,1500,0,0,0,0,0,0,0,0,0,0,0,0
-63,Ring of the High King,0,0,600,300,100,1500,0,0,0,0,0,0,0,0,0,0,0,0
-64,Emperor's Ring,0,0,500,200,100,1000,0,0,0,0,0,0,0,0,0,0,0,0
-65,Ring of Atlantis,0,0,650,240,150,2000,0,0,0,0,0,0,0,0,0,0,0,0
-66,Ring of Hades,0,0,600,250,150,2000,0,0,0,0,0,0,0,0,0,0,0,0
-67,Ring of Olympus,0,0,750,400,175,4000,0,0,0,0,0,0,0,0,0,0,0,0
-68,Ring of Corruption,0,0,0,0,500,2000,0,0,0,0,0,0,0,0,0,0,0,0
-69,Mysterious Ring,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-70,Relenting Prismatic Ring,0,0,750,350,150,2500,0,0,0,0,0,0,0,0,0,0,0,0
-71,Unbreakable Prismatic Ring,0,0,1000,500,200,5000,0,0,0,0,0,0,0,0,0,0,0,0
-72,Unbreakable Cosmic Ring,0,0,2500,800,400,8000,0,0,0,0,0,0,0,0,0,0,0,0
-73,Immortal Cosmic Ring,0,0,5000,1500,1000,20000,0,0,0,0,0,0,0,0,0,0,0,0
-74,Ring of the Galaxies,0,0,4000,1000,750,12000,0,0,0,0,0,0,0,0,0,0,0,0
-75,Ring of Infinity,0,0,10000,2500,1500,1000,0,0,0,0,0,0,0,0,0,0,0,0
-100,null,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-101,Gloves of Newcoming,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0
-102,Worned-out ragged Gloves,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-103,Worned-out cotton Gloves,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0
-104,Tattered cotton Gloves,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0
-105,Basic cotton Gloves,0,0,0,0,0,0,15,0,0,0,0,0,0,0,0,0,0,0
-106,Worned-out leather Gloves,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0
-107,Tattered leather Gloves,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0
-108,Basic leather Gloves,0,0,0,0,0,0,25,0,0,0,0,0,0,0,0,0,0,0
-109,Worned-out silk Gloves,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0
-110,Tattered silk Gloves,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0
-111,Basic silk Gloves,0,0,0,0,0,0,25,0,0,0,0,0,0,0,0,0,0,0
-112,Gloria's Gloves,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,0,0
-113,Gloves of the wanderer,0,0,0,0,0,0,30,0,0,0,0,0,0,0,0,0,0,0
-114,Farmer's Gloves,0,0,0,0,0,0,40,0,0,0,0,0,0,0,0,0,0,0
-115,Stolen Gloves,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0
-116,Gardening Gloves,0,0,0,0,0,0,25,25,0,0,0,0,0,0,0,0,0,0
-117,Miner's Gloves,0,0,0,0,0,0,15,40,0,0,0,0,0,0,0,0,0,0
-118,Alchemist's Gloves,0,0,0,0,0,0,0,100,0,0,0,0,0,0,0,0,0,0
-119,Stitched Gloves,0,0,0,0,0,0,10,10,0,0,0,0,0,0,0,0,0,0
-120,Gloves of the Smith,0,0,0,0,0,0,150,20,0,0,0,0,0,0,0,0,0,0
-121,Gloves of Nature,0,0,0,0,0,0,20,80,0,0,0,0,0,0,0,0,0,0
-122,Wizard's Gloves,0,0,0,0,0,0,0,100,0,0,0,0,0,0,0,0,0,0
-123,Tattered fur Gloves,0,0,0,0,0,0,25,5,0,0,0,0,0,0,0,0,0,0
-124,Basic fur Gloves,0,0,0,0,0,0,35,15,0,0,0,0,0,0,0,0,0,0
-125,Woven fur Gloves,0,0,0,0,0,0,50,25,0,0,0,0,0,0,0,0,0,0
-126,Well-Woven fur Gloves,0,0,0,0,0,0,75,50,0,0,0,0,0,0,0,0,0,0
-127,Tattered snakeskin Gloves,0,0,0,0,0,0,15,10,0,0,0,0,0,0,0,0,0,0
-128,Basic snakeskin Gloves,0,0,0,0,0,0,25,25,0,0,0,0,0,0,0,0,0,0
-129,Woven snakeskin Gloves,0,0,0,0,0,0,40,40,0,0,0,0,0,0,0,0,0,0
-130,Well-Woven snakeskin Gloves,0,0,0,0,0,0,55,65,0,0,0,0,0,0,0,0,0,0
-131,Thief's Gloves,0,0,0,0,0,0,200,0,0,0,0,0,0,0,0,0,0,0
-132,Pirate's Gloves,0,0,0,0,0,0,200,0,0,0,0,0,0,0,0,0,0,0
-133,Gloves of the Hunt,0,0,0,0,0,0,50,80,0,0,0,0,0,0,0,0,0,0
-134,Woven sharkskin Gloves,0,0,0,0,0,0,80,55,10,0,0,0,0,0,0,0,0,0
-135,Well-Woven sharkskin Gloves,0,0,0,0,0,0,125,70,25,0,0,0,0,0,0,0,0,0
-136,Relenting sharkskin Gloves,0,0,0,0,0,0,175,90,40,0,0,0,0,0,0,0,0,0
-137,Gloves of Gold,0,0,0,0,0,0,500,0,0,0,0,0,0,0,0,0,0,0
-138,Knight's Gloves,0,0,0,0,0,0,50,50,50,0,0,0,0,0,0,0,0,0
-139,Woven Lionskin Gloves,0,0,0,0,0,0,60,80,10,0,0,0,0,0,0,0,0,0
-140,Well-Woven Lionskin Gloves,0,0,0,0,0,0,90,100,25,0,0,0,0,0,0,0,0,0
-141,Relenting Lionskin Gloves,0,0,0,0,0,0,125,125,40,0,0,0,0,0,0,0,0,0
-142,Mountain Gloves,0,0,0,0,0,0,55,55,55,0,0,0,0,0,0,0,0,0
-143,Gloves of the Troll King,0,0,0,0,0,0,75,75,75,0,0,0,0,0,0,0,0,0
-144,Gloves of the Depths,0,0,0,0,0,0,120,120,45,0,0,0,0,0,0,0,0,0
-145,Gloves of Camelot,0,0,0,0,0,0,100,100,50,0,0,0,0,0,0,0,0,0
-146,Gloves of the Dragonslayer,0,0,0,0,0,0,75,75,75,0,0,0,0,0,0,0,0,0
-147,Gloves of Daybreak,0,0,0,0,0,0,250,40,40,0,0,0,0,0,0,0,0,0
-148,Gloves of Nightshade,0,0,0,0,0,0,250,40,40,0,0,0,0,0,0,0,0,0
-149,Gloves of Dawnpedal,0,0,0,0,0,0,400,25,25,0,0,0,0,0,0,0,0,0
-150,Gloves of Duskblossom,0,0,0,0,0,0,400,25,25,0,0,0,0,0,0,0,0,0
-151,Relenting Dragonscale Gloves,0,0,0,0,0,0,200,150,50,10,0,0,0,0,0,0,0,0
-152,Unbreakable Dragonscale Gloves,0,0,0,0,0,0,350,250,75,25,0,0,0,0,0,0,0,0
-153,Gloves of Atlantis,0,0,0,0,0,0,300,200,60,20,0,0,0,0,0,0,0,0
-154,Abyssal Gloves,0,0,0,0,0,0,200,100,40,10,0,0,0,0,0,0,0,0
-155,Frosted Gloves,0,0,0,0,0,0,280,125,45,15,0,0,0,0,0,0,0,0
-156,Gloves of Hades,0,0,0,0,0,0,350,200,60,35,0,0,0,0,0,0,0,0
-157,Relenting Phantomscale Gloves,0,0,0,0,0,0,200,100,25,30,0,0,0,0,0,0,0,0
-158,Unbreakable Phantomscale Gloves,0,0,0,0,0,0,350,175,50,50,0,0,0,0,0,0,0,0
-159,Gloves of the Grave,0,0,0,0,0,0,0,0,0,100,0,0,0,0,0,0,0,0
-160,Skeleton Gloves,0,0,0,0,0,0,0,0,125,35,0,0,0,0,0,0,0,0
-161,Ghostly Gloves,0,0,0,0,0,0,0,500,0,0,0,0,0,0,0,0,0,0
-162,Volcanic Gloves,0,0,0,0,0,0,0,0,150,25,0,0,0,0,0,0,0,0
-163,Gloves of Corruption,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-164,Gloves of the Ice Queen,0,0,0,0,0,0,500,250,100,50,0,0,0,0,0,0,0,0
-165,Gloves of the Fire Queen,0,0,0,0,0,0,500,250,100,50,0,0,0,0,0,0,0,0
-166,Emperor's Gloves,0,0,0,0,0,0,1000,0,0,0,0,0,0,0,0,0,0,0
-167,Gloves of the High King,0,0,0,0,0,0,400,100,25,75,0,0,0,0,0,0,0,0
-168,Majestic Gloves,0,0,0,0,0,0,75,75,75,75,0,0,0,0,0,0,0,0
-169,Mysterious Gloves,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-170,Unbreakable Cosmic Gloves,0,0,0,0,0,0,1000,400,200,100,0,0,0,0,0,0,0,0
-171,Immortal Cosmic Gloves,0,0,0,0,0,0,7500,1500,750,300,0,0,0,0,0,0,0,0
-172,Gloves of the Galaxies,0,0,0,0,0,0,5000,1200,400,250,0,0,0,0,0,0,0,0
-173,Gloves of Infinity,0,0,0,0,0,0,50000,0,0,0,0,0,0,0,0,0,0,0
-174,Gloves of the Cosmos,0,0,0,0,0,0,5000,800,600,250,0,0,0,0,0,0,0,0
-200,null,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-201,Boots of Newcoming,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-202,Worned-out Ragged Boot,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-203,Worned-out Cotton Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-204,Tattered Cotton Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4
-205,Basic Cotton Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7
-206,Worned-out Leather Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3
-207,Tattered Leather Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5
-208,Basic Leather Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8
-209,Stolen Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
-210,Boots of the Fool,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9
-211,Soleless Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9
-212,Trader's Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16
-213,Fighter's Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21
-214,Agile Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11
-215,Tattered Fur Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12
-216,Basic Fur Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15
-217,Woven Fur Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18
-218,Well-Woven Fur Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22
-219,Tattered Snakeskin Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10
-220,Basic Snakeskin Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14
-221,Woven Snakeskin Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18
-222,Well-Woven Snakeskin Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24
-223,Wizard's Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17
-224,Guardain Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15
-225,Woven Sharkskin Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32
-226,Well-Woven Sharkskin Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36
-227,Relenting Sharkskin Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40
-228,Mountain Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35
-229,Weightless Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,33
-230,Boots of Swiftness,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36
-231,Woven Lionskin Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30
-232,Well-Woven Lionskin Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36
-233,Relenting Lionskin Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,45
-234,Boots of the Exiled,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44
-235,Relenting Dragonscale Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50
-236,Unbreakable Dragonscale Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65
-237,Boots of Atlantis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55
-238,Rainbow Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,70
-239,The Dark Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,70
-240,Chronoboots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66
-241,Relenting Phantomscale Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50
-242,Unbreakable Phantomscale Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60
-243,Odin's Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,62
-244,Winged Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52
-245,Unbreakable Cosmic Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,75
-246,Immortal Cosmic Boots,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,85
-247,Gloves of the Galaxies,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,77
-248,Gloves of the Cosmos,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,82
-401,Broken Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-402,Cracked Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-403,Oakbark Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,25,0,0
-404,Dusty Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,10,0,0
-405,Dispelled Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,10,0,0
-406,Stone Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,20,0,0
-407,Clay Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,30,0,0
-408,The Fool's Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,45,0,0
-409,Talisman of the Smith,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,30,0,0
-410,Maplebark Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,40,0,0
-411,Maplebark Emerald Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,60,0,0
-412,Priestess's Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,55,0,0
-413,x,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-414,Talisman of Nature,0,0,0,0,0,0,0,0,0,0,0,0,0,0,42,42,0,0
-415,Talisman of the Thief,0,0,0,0,0,0,0,0,0,0,0,0,0,0,45,45,0,0
-416,x,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-417,x,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,0,0,0
-418,Pinebark Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,45,0,0
-419,Pinebark Emerald Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,46,55,0,0
-420,The Wicked Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,60,0,0
-421,x,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-422,The Seer's Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,38,48,0,0
-423,Fairy's Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,44,44,0,0
-424,Unholy Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,30,40,0,0
-425,Ebonbark Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55,65,0,0
-426,Ebonbark Emerald Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,75,75,0,0
-427,Ebonbark Sapphire Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,100,0,0
-428,x,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-429,Enchanted Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,65,0,0
-430,The Alchemist's Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,50,80,0,0
-431,Talisman of the Mountain,0,0,0,0,0,0,0,0,0,0,0,0,0,0,85,70,0,0
-432,Quartz Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,60,75,0,0
-433,Quartz Emerald Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,100,0,0
-434,Quartz Sapphire Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,75,120,0,0
-435,x,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-436,x,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-437,x,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-438,Talisman of Desires,0,0,0,0,0,0,0,0,0,0,0,0,0,0,125,50,0,0
-439,Talisman of Greed,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,175,0,0
-440,Talisman of Envy,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,100,0,0
-441,Talisman of Zeal,0,0,0,0,0,0,0,0,0,0,0,0,0,0,175,0,0,0
-442,The Troll's Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,66,0,0
-443,x,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-444,x,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-445,Sagebark Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,150,120,0,0
-446,Sagebark Emerald Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,230,140,0,0
-447,Sagebark Sapphire Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,300,170,0,0
-448,Sagebark Ruby Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,360,200,0,0
-449,Magmanite Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,120,160,0,0
-450,Magmanite Emerald Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,150,200,0,0
-451,Magmanite Sapphire Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,180,250,0,0
-452,Magmanite Ruby Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,240,300,0,0
-453,Talisman of Blood,0,0,0,0,0,0,0,0,0,0,0,0,0,0,175,175,0,0
-454,x,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-455,x,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-456,The Timekeeper's Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,350,120,0,0
-457,x,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-458,Talisman of the Seas,0,0,0,0,0,0,0,0,0,0,0,0,0,0,225,200,0,0
-459,Abyssal Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,275,260,0,0
-460,Elderbark Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,400,300,0,0
-461,Elderbark Emerald Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,700,700,0,0
-462,Elderbark Sapphire Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,900,900,0,0
-463,Elderbark Ruby Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1400,1400,0,0
-464,Elderbark Starfoil Talisman,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1900,1900,0,0
+1,null,0,0,0,0,0,0
+2,Ring of Newcoming,0,0,0,0,0,0
+3,Broken Ring,0,0,0,0,0,0
+4,Rusted Brass Ring,0,0,0.05,0,0,0
+5,Dusty Brass Ring,0,0,0.1,0,0,0
+6,Simple Ring,0,0,0.15,0,0,0
+7,Peasant's Ring,0,0,0.1,0,0,0
+8,Dusty Bronze Ring,0,0,0.12,0,0,0
+9,Basic Bronze Ring,0,0,0.2,0,0,0
+10,Dirty Ring,0,0,0.06,0,0,0
+11,Unwritten Ring,0,0,0.06,0,0,0
+12,Ring of Stone,0,0,0.12,0,0,0
+13,Cracked Ring,0,0,0.08,0,0,0
+14,Villager's Ring,0,0,0.18,0,0,0
+15,Dusty Copper Ring,0,0,0.15,0,0,0
+16,Basic Copper Ring,0,0,0.25,0,0,0
+17,Cheap Gold Ring,0,0,0.2,0,0,0
+18,Scratched Ring,0,0,0.17,0,0,0
+19,Smith's Ring,0,0,0.16,0,0,0
+20,Ring of Nature,0,0,0.3,30,0,0
+21,The Thief's Lucky Ring,0,0,0.5,40,0,0
+22,The Gatherer's Ring,0,0,0.8,0,0,0
+23,The Lost Ring,0,0,0,0,0,0
+24,Banded Ring,0,0,0.3,10,0,0
+25,Ring of Earth,0,0,0.75,30,0,0
+26,Dusty Clay Ring,0,0,0.25,0,0,0
+27,Basic Clay Ring,0,0,0.4,10,0,0
+28,Forged Clay Ring,0,0,0.65,25,0,0
+29,Well-Forged Clay Ring,0,0,0.8,40,0,0
+30,The Chaser's Ring,0,0,0.75,35,0,0
+31,Ring of the Gatekeeper,0,0,0.45,45,0,0
+32,Ring of Decay,0,0,0.25,25,0,0
+33,Dusty Iron Ring,0,0,0.3,0,0,0
+34,Basic Iron Ring,0,0,0.5,15,0,0
+35,Forged Iron Ring,0,0,0.75,30,0,0
+36,Well-Forged Iron Ring,0,0,1,50,0,0
+37,Ring of Void,0,0,0,0,0,0
+38,Ring of Strength,0,0,3.5,25,0,0
+39,The Lost Ring,0,0,0,0,0,0
+40,Lucky Ring,0,0,4,0,0,0
+41,Forged Gold Ring,0,0,1.6,50,10,0
+42,Well-Forged Gold Ring,0,0,2.25,75,20,0
+43,Relenting Gold Ring,0,0,2.75,100,30,0
+44,Ring of the Skies,0,0,3.33,33,33,0
+45,Ring of Glory,0,0,1.2,120,60,0
+46,Ring of Crows,0,0,2.22,111,0,0
+47,Forged Steel Ring,0,0,1.8,75,25,0
+48,Well-Forged Steel Ring,0,0,2.4,120,40,0
+49,Relenting Steel Ring,0,0,3,150,50,0
+50,Ring of Fire,0,0,5,0,0,0
+51,Ring of Ice,0,0,5,0,0,0
+52,Ring of Treachery,0,0,0,0,85,0
+53,Frosted Ring,0,0,2.4,100,35,0
+54,Ring of the Moon,0,0,2,150,50,0
+55,Ring of the Sun,0,0,2,150,50,0
+56,Volcanic Ring,0,0,6,200,100,1000
+57,The One Ring,0,0,25,0,0,1000
+58,Abyssal Ring,0,0,0,0,0,7500
+59,Ring of the Forbidden,0,0,10,500,250,0
+60,Relenting Obsidian Ring,0,0,5,200,100,1000
+61,Unbreakable Obsidian Ring,0,0,8,400,175,3000
+62,Heaven's Ring,0,0,6,200,140,1500
+63,Ring of the High King,0,0,6,300,100,1500
+64,Emperor's Ring,0,0,5,200,100,1000
+65,Ring of Atlantis,0,0,6.5,240,150,2000
+66,Ring of Hades,0,0,6,250,150,2000
+67,Ring of Olympus,0,0,7.5,400,175,4000
+68,Ring of Corruption,0,0,0,0,500,2000
+69,Mysterious Ring,0,0,0,0,0,0
+70,Relenting Prismatic Ring,0,0,7.5,350,0,2500
+71,Unbreakable Prismatic Ring,0,0,10,500,200,5000
+72,Unbreakable Cosmic Ring,0,0,25,800,400,8000
+73,Immortal Cosmic Ring,0,0,50,1500,1000,20000
+74,Ring of the Galaxies,0,0,40,1000,750,12000
+75,Ring of Infinity,0,0,100,2500,1500,1000
+100,null,0,0,0,0,0,0
+101,Gloves of Newcoming,0,0,0,0,0,0
+102,Worned-out ragged Gloves,0,0,0,0,0,0
+103,Worned-out cotton Gloves,0,0,0,0,0,0
+104,Tattered cotton Gloves,0,0,0,0,0,0
+105,Basic cotton Gloves,0,0,0,0,0,0
+106,Worned-out leather Gloves,0,0,0,0,0,0
+107,Tattered leather Gloves,0,0,0,0,0,0
+108,Basic leather Gloves,0,0,0,0,0,0
+109,Worned-out silk Gloves,0,0,0,0,0,0
+110,Tattered silk Gloves,0,0,0,0,0,0
+111,Basic silk Gloves,0,0,0,0,0,0
+112,Gloria's Gloves,0,0,0,0,0,0
+113,Gloves of the wanderer,0,0,0,0,0,0
+114,Farmer's Gloves,0,0,0,0,0,0
+115,Stolen Gloves,0,0,0,0,0,0
+116,Gardening Gloves,0,0,0,0,0,0
+117,Miner's Gloves,0,0,0,0,0,0
+118,Alchemist's Gloves,0,0,0,0,0,0
+119,Stitched Gloves,0,0,0,0,0,0
+120,Gloves of the Smith,0,0,0,0,0,0
+121,Gloves of Nature,0,0,0,0,0,0
+122,Wizard's Gloves,0,0,0,0,0,0
+123,Tattered fur Gloves,0,0,0,0,0,0
+124,Basic fur Gloves,0,0,0,0,0,0
+125,Woven fur Gloves,0,0,0,0,0,0
+126,Well-Woven fur Gloves,0,0,0,0,0,0
+127,Tattered snakeskin Gloves,0,0,0,0,0,0
+128,Basic snakeskin Gloves,0,0,0,0,0,0
+129,Woven snakeskin Gloves,0,0,0,0,0,0
+130,Well-Woven snakeskin Gloves,0,0,0,0,0,0
+131,Thief's Gloves,0,0,0,0,0,0
+132,Pirate's Gloves,0,0,0,0,0,0
+133,Gloves of the Hunt,0,0,0,0,0,0
+134,Woven sharkskin Gloves,0,0,0,0,0,0
+135,Well-Woven sharkskin Gloves,0,0,0,0,0,0
+136,Relenting sharkskin Gloves,0,0,0,0,0,0
+137,Gloves of Gold,0,0,0,0,0,0
+138,Knight's Gloves,0,0,0,0,0,0
+139,Woven Lionskin Gloves,0,0,0,0,0,0
+140,Well-Woven Lionskin Gloves,0,0,0,0,0,0
+141,Relenting Lionskin Gloves,0,0,0,0,0,0
+142,Mountain Gloves,0,0,0,0,0,0
+143,Gloves of the Troll King,0,0,0,0,0,0
+144,Gloves of the Depths,0,0,0,0,0,0
+145,Gloves of Camelot,0,0,0,0,0,0
+146,Gloves of the Dragonslayer,0,0,0,0,0,0
+147,Gloves of Daybreak,0,0,0,0,0,0
+148,Gloves of Nightshade,0,0,0,0,0,0
+149,Gloves of Dawnpedal,0,0,0,0,0,0
+150,Gloves of Duskblossom,0,0,0,0,0,0
+151,Relenting Dragonscale Gloves,0,0,0,0,0,0
+152,Unbreakable Dragonscale Gloves,0,0,0,0,0,0
+153,Gloves of Atlantis,0,0,0,0,0,0
+154,Abyssal Gloves,0,0,0,0,0,0
+155,Frosted Gloves,0,0,0,0,0,0
+156,Gloves of Hades,0,0,0,0,0,0
+157,Relenting Phantomscale Gloves,0,0,0,0,0,0
+158,Unbreakable Phantomscale Gloves,0,0,0,0,0,0
+159,Gloves of the Grave,0,0,0,0,0,0
+160,Skeleton Gloves,0,0,0,0,0,0
+161,Ghostly Gloves,0,0,0,0,0,0
+162,Volcanic Gloves,0,0,0,0,0,0
+163,Gloves of Corruption,0,0,0,0,0,0
+164,Gloves of the Ice Queen,0,0,0,0,0,0
+165,Gloves of the Fire Queen,0,0,0,0,0,0
+166,Emperor's Gloves,0,0,0,0,0,0
+167,Gloves of the High King,0,0,0,0,0,0
+168,Majestic Gloves,0,0,0,0,0,0
+169,Mysterious Gloves,0,0,0,0,0,0
+170,Unbreakable Cosmic Gloves,0,0,0,0,0,0
+171,Immortal Cosmic Gloves,0,0,0,0,0,0
+172,Gloves of the Galaxies,0,0,0,0,0,0
+173,Gloves of Infinity,0,0,0,0,0,0
+174,Gloves of the Cosmos,0,0,0,0,0,0
+200,null,0,0,0,0,0,0
+201,Boots of Newcoming,0,0,0,0,0,0
+202,Worned-out Ragged Boot,0,0,0,0,0,0
+203,Worned-out Cotton Boots,0,0,0,0,0,0
+204,Tattered Cotton Boots,0,0,0,0,0,0
+205,Basic Cotton Boots,0,0,0,0,0,0
+206,Worned-out Leather Boots,0,0,0,0,0,0
+207,Tattered Leather Boots,0,0,0,0,0,0
+208,Basic Leather Boots,0,0,0,0,0,0
+209,Stolen Boots,0,0,0,0,0,0
+210,Boots of the Fool,0,0,0,0,0,0
+211,Soleless Boots,0,0,0,0,0,0
+212,Trader's Boots,0,0,0,0,0,0
+213,Fighter's Boots,0,0,0,0,0,0
+214,Agile Boots,0,0,0,0,0,0
+215,Tattered Fur Boots,0,0,0,0,0,0
+216,Basic Fur Boots,0,0,0,0,0,0
+217,Woven Fur Boots,0,0,0,0,0,0
+218,Well-Woven Fur Boots,0,0,0,0,0,0
+219,Tattered Snakeskin Boots,0,0,0,0,0,0
+220,Basic Snakeskin Boots,0,0,0,0,0,0
+221,Woven Snakeskin Boots,0,0,0,0,0,0
+222,Well-Woven Snakeskin Boots,0,0,0,0,0,0
+223,Wizard's Boots,0,0,0,0,0,0
+224,Guardain Boots,0,0,0,0,0,0
+225,Woven Sharkskin Boots,0,0,0,0,0,0
+226,Well-Woven Sharkskin Boots,0,0,0,0,0,0
+227,Relenting Sharkskin Boots,0,0,0,0,0,0
+228,Mountain Boots,0,0,0,0,0,0
+229,Weightless Boots,0,0,0,0,0,0
+230,Boots of Swiftness,0,0,0,0,0,0
+231,Woven Lionskin Boots,0,0,0,0,0,0
+232,Well-Woven Lionskin Boots,0,0,0,0,0,0
+233,Relenting Lionskin Boots,0,0,0,0,0,0
+234,Boots of the Exiled,0,0,0,0,0,0
+235,Relenting Dragonscale Boots,0,0,0,0,0,0
+236,Unbreakable Dragonscale Boots,0,0,0,0,0,0
+237,Boots of Atlantis,0,0,0,0,0,0
+238,Rainbow Boots,0,0,0,0,0,0
+239,The Dark Boots,0,0,0,0,0,0
+240,Chronoboots,0,0,0,0,0,0
+241,Relenting Phantomscale Boots,0,0,0,0,0,0
+242,Unbreakable Phantomscale Boots,0,0,0,0,0,0
+243,Odin's Boots,0,0,0,0,0,0
+244,Winged Boots,0,0,0,0,0,0
+245,Unbreakable Cosmic Boots,0,0,0,0,0,0
+246,Immortal Cosmic Boots,0,0,0,0,0,0
+401,Broken Talisman,0,0,0,0,0,0
+402,Cracked Talisman,0,0,0,0,0,0
+403,Oakbark Talisman,0,0,0,0,0,0
+404,Dusty Talisman,0,0,0,0,0,0
+405,Dispelled Talisman,0,0,0,0,0,0
+406,Stone Talisman,0,0,0,0,0,0
+407,Clay Talisman,0,0,0,0,0,0
+408,The Fool's Talisman,0,0,0,0,0,0
+409,Talisman of the Smith,0,0,0,0,0,0
+410,Maplebark Talisman,0,0,0,0,0,0
+411,Maplebark Emerald Talisman,0,0,0,0,0,0
+412,Priestess's Talisman,0,0,0,0,0,0
+413,x,0,0,0,0,0,0
+414,Talisman of Nature,0,0,0,0,0,0
+415,Talisman of the Thief,0,0,0,0,0,0
+416,x,0,0,0,0,0,0
+417,x,0,0,0,0,0,0
+418,Pinebark Talisman,0,0,0,0,0,0
+419,Pinebark Emerald Talisman,0,0,0,0,0,0
+420,The Wicked Talisman,0,0,0,0,0,0
+421,x,0,0,0,0,0,0
+422,The Seer's Talisman,0,0,0,0,0,0
+423,Fairy's Talisman,0,0,0,0,0,0
+424,Unholy Talisman,0,0,0,0,0,0
+425,Ebonbark Talisman,0,0,0,0,0,0
+426,Ebonbark Emerald Talisman,0,0,0,0,0,0
+427,Ebonbark Sapphire Talisman,0,0,0,0,0,0
+428,x,0,0,0,0,0,0
+429,Enchanted Talisman,0,0,0,0,0,0
+430,The Alchemist's Talisman,0,0,0,0,0,0
+431,Talisman of the Mountain,0,0,0,0,0,0
+432,Quartz Talisman,0,0,0,0,0,0
+433,Quartz Emerald Talisman,0,0,0,0,0,0
+434,Quartz Sapphire Talisman,0,0,0,0,0,0
+435,x,0,0,0,0,0,0
+436,x,0,0,0,0,0,0
+437,x,0,0,0,0,0,0
+438,Talisman of Desires,0,0,0,0,0,0
+439,Talisman of Greed,0,0,0,0,0,0
+440,Talisman of Envy,0,0,0,0,0,0
+441,Talisman of Zeal,0,0,0,0,0,0
+442,The Troll's Talisman,0,0,0,0,0,0
+443,x,0,0,0,0,0,0
+444,x,0,0,0,0,0,0
+445,Sagebark Talisman,0,0,0,0,0,0
+446,Sagebark Emerald Talisman,0,0,0,0,0,0
+447,Sagebark Sapphire Talisman,0,0,0,0,0,0
+448,Sagebark Ruby Talisman,0,0,0,0,0,0
+449,Magmanite Talisman,0,0,0,0,0,0
+450,Magmanite Emerald Talisman,0,0,0,0,0,0
+451,Magmanite Sapphire Talisman,0,0,0,0,0,0
+452,Magmanite Ruby Talisman,0,0,0,0,0,0
+453,Talisman of Blood,0,0,0,0,0,0
+454,x,0,0,0,0,0,0
+455,x,0,0,0,0,0,0
+456,The Timekeeper's Talisman,0,0,0,0,0,0
+457,x,0,0,0,0,0,0
+458,Talisman of the Seas,0,0,0,0,0,0
+459,Abyssal Talisman,0,0,0,0,0,0
+460,Elderbark Talisman,0,0,0,0,0,0
+461,Elderbark Emerald Talisman,0,0,0,0,0,0
+462,Elderbark Sapphire Talisman,0,0,0,0,0,0
+463,Elderbark Ruby Talisman,0,0,0,0,0,0
+464,Elderbark Starfoil Talisman,0,0,0,0,0,0

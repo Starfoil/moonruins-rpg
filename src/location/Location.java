@@ -10,6 +10,7 @@ public abstract class Location {
 
 	public String name;
 	public ArrayList<Connection> connections;
+	public String description;
 
 	private int gCost;
 	private int hCost;
@@ -21,18 +22,15 @@ public abstract class Location {
 		this.gCost = 0;
 		this.hCost = 0;
 	}
+	
+	public void setDescription(String desc){
+		this.description = desc;
+	}
 
 	public void addConnection(Connection C) {
 		if (C.contains(this)) {
 			this.connections.add(C);
 		}
-	}
-
-	public boolean buildConnection(Location loc) {
-		if (getConnection(loc) != null) {
-			return getConnection(loc).build();
-		}
-		return false;
 	}
 
 	public void clean() {

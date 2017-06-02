@@ -1,39 +1,31 @@
 package gameObjects;
 
-public class Resource {
+public class ResourceObject {
 	
 	public int ID;
 	public String name;
-	
-	public int regularMoney;
-	public int reinforcedMoney;
-	public int enrichedMoney;
-	public int augmentedMoney;
+	public int value;
+	public String description;
 	
 	
-	public Resource(int ID, String name){
+	public ResourceObject(int ID, String name){
 		this.ID = ID;
 		this.name = name;
 	}
 	
 	
 	
-	public Resource(int iD, String name, int regularMoney, int reinforcedMoney,
-			int enrichedMoney, int augmentedMoney) {
-		ID = iD;
+	public ResourceObject(int ID, String name, int value, String description) {
+		this.ID = ID;
 		this.name = name;
-		this.regularMoney = regularMoney;
-		this.reinforcedMoney = reinforcedMoney;
-		this.enrichedMoney = enrichedMoney;
-		this.augmentedMoney = augmentedMoney;
+		this.value = value;
+		this.description = description;
 	}
-
 
 
 	public String toString(){
 		return this.name + "[" + this.ID + "]";
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -43,7 +35,7 @@ public class Resource {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Resource other = (Resource) obj;
+		ResourceObject other = (ResourceObject) obj;
 		if (ID != other.ID)
 			return false;
 		if (name == null) {
@@ -51,8 +43,12 @@ public class Resource {
 				return false;
 		} else if (!name.equals(other.name))
 			return false;
+		if (value != other.value)
+			return false;
 		return true;
 	}
+
+
 	
 	
 	

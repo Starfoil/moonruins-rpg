@@ -1,7 +1,7 @@
 package Data;
 
 import gameObjects.*;
-import gameObjects.Character;
+import gameObjects.Follower;
 import items.*;
 
 import java.io.BufferedReader;
@@ -23,14 +23,14 @@ import Player.PLAYER;
 public class DataLoader {
 	
 	public static void LOAD() throws IOException{
-		DataLoader.loadResources("DATA\\resources.txt");
+		DataLoader.loadResources("DATA\\resources.csv");
 		DataLoader.loadGatherLocations("DATA\\locations.txt");	
 		DataLoader.loadItems("DATA\\items.csv");
 		DataLoader.loadCharacters("DATA\\characters.txt");
 		DataLoader.loadQuests("DATA\\quests.txt");
 		DataLoader.loadTowns("DATA\\towns.txt");
 		DataLoader.loadConnections("DATA\\connections.txt");
-		DataLoader.loadBlueprints("DATA\\blueprints.txt");
+		//DataLoader.loadBlueprints("DATA\\blueprints.txt");
 		DataLoader.loadCrates("DATA\\crates.txt");
 		DataLoader.loadSaveData("DATA\\playerdata.txt");
 	}
@@ -55,26 +55,26 @@ public class DataLoader {
 		READER.close();
 	}
 
-	public static void loadBlueprints(String path) throws NumberFormatException, IOException{
-		FileReader FILE = new FileReader(path);
-		BufferedReader READER = new BufferedReader(FILE);
-		String line = "";
-		String[] tokens;
-		while ((line = READER.readLine()) != null) {	
-			Item I = DataStorage.getItem(Integer.parseInt(line));
-			Blueprint B = new Blueprint(I);
-			while(!(line = READER.readLine()).equals("END")){
-				tokens = line.split(","); 
-				Resource RES = DataStorage.getResource(tokens[0].trim());
-				int RESRarity = Integer.parseInt(tokens[1].trim());
-				int RESAmount = Integer.parseInt(tokens[2].trim());
-				ResourcePackage RP = new ResourcePackage(RES, RESRarity, RESAmount);
-				B.addComponenet(RP);
-			}
-			Workshop.CRAFTABLES.add(B);
-		}
-		READER.close();
-	}
+//	public static void loadBlueprints(String path) throws NumberFormatException, IOException{
+//		FileReader FILE = new FileReader(path);
+//		BufferedReader READER = new BufferedReader(FILE);
+//		String line = "";
+//		String[] tokens;
+//		while ((line = READER.readLine()) != null) {	
+//			Item I = DataStorage.getItem(Integer.parseInt(line));
+//			Blueprint B = new Blueprint(I);
+//			while(!(line = READER.readLine()).equals("END")){
+//				tokens = line.split(","); 
+//				Resource RES = DataStorage.getResource(tokens[0].trim());
+//				int RESRarity = Integer.parseInt(tokens[1].trim());
+//				int RESAmount = Integer.parseInt(tokens[2].trim());
+//				ResourcePackage RP = new ResourcePackage(RES, RESRarity, RESAmount);
+//				B.addComponenet(RP);
+//			}
+//			Workshop.CRAFTABLES.add(B);
+//		}
+//		READER.close();
+//	}
 
 	public static void loadQuests(String path) throws NumberFormatException, IOException{
 		FileReader FILE = new FileReader(path);
@@ -89,7 +89,7 @@ public class DataLoader {
 
 			line = READER.readLine();
 			tokens = line.split(",");
-			Resource RES = DataStorage.getResource(tokens[0].trim());
+			ResourceObject RES = DataStorage.getResource(tokens[0].trim());
 			int RESRarity = Integer.parseInt(tokens[1].trim());
 			int RESAmount = Integer.parseInt(tokens[2].trim());	
 
@@ -128,7 +128,7 @@ public class DataLoader {
 
 			while (!(line = READER.readLine()).equals("ENDINN")){
 				tokens = line.split(",");
-				Character C = DataStorage.getCharacter((Integer.parseInt(tokens[0].trim())));
+				Follower C = DataStorage.getCharacter((Integer.parseInt(tokens[0].trim())));
 				if (C != null){INN.addCharacterToInn(C, Integer.parseInt(tokens[1].trim()));}
 			}
 			while (!(line = READER.readLine()).equals("ENDSHOP")){
@@ -158,39 +158,18 @@ public class DataLoader {
 			int ID = Integer.parseInt(tokens[0].trim());
 			String name = tokens[1].trim();
 			int rarityID = Integer.parseInt(tokens[2].trim());
-			Character C = new Character(ID, name, rarityID);
+			Follower C = new Follower(ID, name, rarityID);
 			String description = READER.readLine();
 			C.setDescription(description);
 
 			line = READER.readLine();
 			tokens = line.split(",");
-			int RFF = Integer.parseInt(tokens[0].trim());
-			int ERF = Integer.parseInt(tokens[1].trim());
-			int AMF = Integer.parseInt(tokens[2].trim());
-			int SRF = Integer.parseInt(tokens[3].trim());
+			double hands  = Integer.parseInt(tokens[0].trim());
+			double magic = Integer.parseInt(tokens[1].trim());
+			int third = Integer.parseInt(tokens[2].trim());
+			int fourth = Integer.parseInt(tokens[3].trim());
 
-			line = READER.readLine();
-			tokens = line.split(",");
-			int WIL = Integer.parseInt(tokens[0].trim());
-			int RFW = Integer.parseInt(tokens[1].trim());
-			int ERW = Integer.parseInt(tokens[2].trim());
-			int AMW = Integer.parseInt(tokens[3].trim());
-
-			line = READER.readLine();
-			tokens = line.split(",");
-			int EML = Integer.parseInt(tokens[0].trim());
-			int SPL = Integer.parseInt(tokens[1].trim());
-			int RBL = Integer.parseInt(tokens[2].trim());
-			int SRL = Integer.parseInt(tokens[3].trim());
-
-			line = READER.readLine();
-			tokens = line.split(",");
-			int MNC = Integer.parseInt(tokens[0].trim());
-			int AFF = Integer.parseInt(tokens[1].trim());
-			int VEN = Integer.parseInt(tokens[2].trim());
-			int HAS = Integer.parseInt(tokens[3].trim());
-
-			Stats S = new Stats(RFF, ERF, AMF, SRF, WIL, RFW, ERW, AMW, EML, SPL, RBL, SRL, MNC, AFF, VEN, HAS);
+			Stats S = new Stats(hands, magic);
 			C.setStats(S);
 			String lore = "";
 			while(!(line = READER.readLine()).equals("END")){
@@ -232,24 +211,12 @@ public class DataLoader {
 			else{
 				I = new Ring(ID, name, rarityID, cost);
 			}
-			int RFF = Integer.parseInt(tokens[4].trim());
-			int ERF = Integer.parseInt(tokens[5].trim());
-			int AMF = Integer.parseInt(tokens[6].trim());
-			int SRF = Integer.parseInt(tokens[7].trim());
-			int WIL = Integer.parseInt(tokens[8].trim());
-			int RFW = Integer.parseInt(tokens[9].trim());
-			int ERW = Integer.parseInt(tokens[10].trim());
-			int AMW = Integer.parseInt(tokens[11].trim());
-			int EML = Integer.parseInt(tokens[12].trim());
-			int SPL = Integer.parseInt(tokens[13].trim());
-			int RBL = Integer.parseInt(tokens[14].trim());
-			int SRL = Integer.parseInt(tokens[15].trim());
-			int MNC = Integer.parseInt(tokens[16].trim());
-			int AFF = Integer.parseInt(tokens[17].trim());
-			int VEN = Integer.parseInt(tokens[18].trim());
-			int HAS = Integer.parseInt(tokens[19].trim());
+			double hands = Double.parseDouble(tokens[4].trim());
+			double magic = Double.parseDouble(tokens[5].trim());
+			int todo1 = Integer.parseInt(tokens[6].trim());
+			int todo2 = Integer.parseInt(tokens[7].trim());
 
-			Stats S = new Stats(RFF, ERF, AMF, SRF, WIL, RFW, ERW, AMW, EML, SPL, RBL, SRL, MNC, AFF, VEN, HAS);
+			Stats S = new Stats(hands, magic);
 			I.setStats(S);
 			DataStorage.ITM.add(I);
 		}
@@ -263,12 +230,11 @@ public class DataLoader {
 		while ((line = READER.readLine()) != null) 
 		{
 			String[] tokens = line.split(",");
-			int regularMoney = Integer.parseInt(tokens[2].trim());
-			int reinforcedMoney = Integer.parseInt(tokens[3].trim());
-			int enrichedMoney = Integer.parseInt(tokens[4].trim());
-			int augmentedMoney = Integer.parseInt(tokens[5].trim());
-			Resource R = new Resource(Integer.parseInt(tokens[0].trim()), tokens[1].trim(),
-					regularMoney, reinforcedMoney, enrichedMoney, augmentedMoney);
+			int ID = Integer.parseInt(tokens[0].trim());
+			String name = tokens[1].trim();
+			int value = Integer.parseInt(tokens[2].trim());
+			String desc = tokens[3].trim();
+			ResourceObject R = new ResourceObject(ID, name, value, desc);
 			DataStorage.RES.add(R);
 		}
 		READER.close();
@@ -282,6 +248,11 @@ public class DataLoader {
 		{
 			String LocationName = line;
 			GatherLocation L = new GatherLocation(LocationName);
+			String desc = "";
+			while(!(line = READER.readLine()).equals("ENDDES")){
+				desc += line + "\n";
+			}
+			L.setDescription(desc);
 			while(!(line = READER.readLine()).equals("END")){
 				String[] tokens = line.split(",");
 				if(tokens[0].trim().equals("MR")){
@@ -300,40 +271,15 @@ public class DataLoader {
 					L.addMoonRuin(MR);
 					tokens = READER.readLine().split(",");
 				};
-				Resource R = DataStorage.getResource(tokens[0].trim());
+				ResourceObject R = DataStorage.getResource(tokens[0].trim());
 				int chance = Integer.parseInt(tokens[1].trim());
-
-				line = READER.readLine();
-				tokens = line.split(",");
-				int regularChance = Integer.parseInt(tokens[0].trim());
-				int reinforcedChance = Integer.parseInt(tokens[1].trim());
-				int enrichedChance = Integer.parseInt(tokens[2].trim());
-				int augmentedChance = Integer.parseInt(tokens[3].trim());
-
-				line = READER.readLine();
-				tokens = line.split(",");
-				int regularAmount = Integer.parseInt(tokens[0].trim());
-				int reinforcedAmount = Integer.parseInt(tokens[1].trim());
-				int enrichedAmount = Integer.parseInt(tokens[2].trim());
-				int augmentedAmount = Integer.parseInt(tokens[3].trim());
-
-				line = READER.readLine();
-				tokens = line.split(",");
-				int regularMAmount = Integer.parseInt(tokens[0].trim());
-				int reinforcedMAmount = Integer.parseInt(tokens[1].trim());
-				int enrichedMAmount = Integer.parseInt(tokens[2].trim());
-				int augmentedMAmount = Integer.parseInt(tokens[3].trim());
-
-
-
-				GatherChance GC = new GatherChance(R, chance, regularChance, reinforcedChance, enrichedChance, augmentedChance,
-						regularAmount, reinforcedAmount, enrichedAmount, augmentedAmount,
-						regularMAmount, reinforcedMAmount, enrichedMAmount, augmentedMAmount);
-
+				int min = Integer.parseInt(tokens[2].trim());
+				int max = Integer.parseInt(tokens[3].trim());
+				
+				GatherChance GC = new GatherChance(R, chance, min, max);
 				L.addGatheringChance(GC);
 			}
 			DataStorage.LOC.add(L);
-
 		}
 		READER.close();
 	}
@@ -357,10 +303,9 @@ public class DataLoader {
 			c.setTravelCost(Integer.parseInt(tokens[3].trim()));
 			while(!(line = READER.readLine()).equals("END")){
 				tokens = line.split(",");
-				Resource r = DataStorage.getResource(tokens[0].trim());
-				int rarityID = Integer.parseInt(tokens[1].trim());
-				int amount = Integer.parseInt(tokens[2].trim());
-				c.addConnectionCost(r, rarityID, amount);
+				ResourceObject r = DataStorage.getResource(tokens[0].trim());
+				int amount = Integer.parseInt(tokens[1].trim());
+				c.addConnectionCost(r, amount);
 			}
 			startLoc.addConnection(c);
 			endLoc.addConnection(c);
@@ -375,9 +320,7 @@ public class DataLoader {
 		PLAYER.setName(READER.readLine());
 		PLAYER.Initialize(DataStorage.getLocation(READER.readLine()));
 		String[] tokens = READER.readLine().split(",");
-		PLAYER.addCoins(0, Integer.parseInt(tokens[2].trim()));
-		PLAYER.addCoins(1, Integer.parseInt(tokens[1].trim()));
-		PLAYER.addCoins(2, Integer.parseInt(tokens[0].trim()));
+		PLAYER.addCoins(Integer.parseInt(tokens[0].trim()));
 		tokens = READER.readLine().split(",");
 		PLAYER.addGems(0, Integer.parseInt(tokens[0].trim()));
 		PLAYER.addGems(1, Integer.parseInt(tokens[1].trim()));
@@ -388,17 +331,11 @@ public class DataLoader {
 		PLAYER.addKeys(Integer.parseInt(tokens[1].trim()));
 		
 		String line = "";
-		for (Resource R : DataStorage.RES){
-			PLAYER.addResources(R, 0, 0);
-		}
 		while(!(line = READER.readLine()).equals("ENDRES")){
 			tokens = line.split(",");
-			Resource item = DataStorage.getResource(tokens[0].trim());
-			PLAYER.addResources(item, 0, Integer.parseInt(tokens[1].trim()));
-			PLAYER.addResources(item, 1, Integer.parseInt(tokens[2].trim()));
-			PLAYER.addResources(item, 2, Integer.parseInt(tokens[3].trim()));
-			PLAYER.addResources(item, 3, Integer.parseInt(tokens[4].trim()));
-			PLAYER.addResources(item, 0, Integer.parseInt(tokens[5].trim()));
+			ResourceObject item = DataStorage.getResource(tokens[0].trim());
+			int amount = Integer.parseInt(tokens[1].trim());
+			PLAYER.addResources(item, amount);
 		}
 
 		line = READER.readLine();
@@ -431,20 +368,26 @@ public class DataLoader {
 
 		line = READER.readLine();
 		tokens = line.split(",");
-		Character middle = DataStorage.getCharacter(Integer.parseInt(tokens[0].trim()));
-		Character left = DataStorage.getCharacter(Integer.parseInt(tokens[1].trim()));
-		Character right = DataStorage.getCharacter(Integer.parseInt(tokens[2].trim()));
+		Follower slot1 = DataStorage.getCharacter(Integer.parseInt(tokens[0].trim()));
+		Follower slot2 = DataStorage.getCharacter(Integer.parseInt(tokens[1].trim()));
+		Follower slot3 = DataStorage.getCharacter(Integer.parseInt(tokens[2].trim()));
+		Follower slot4 = DataStorage.getCharacter(Integer.parseInt(tokens[3].trim()));
+		Follower slot5 = DataStorage.getCharacter(Integer.parseInt(tokens[4].trim()));
 
-
-		PLAYER.addCharacter(middle);
-		PLAYER.equipCharacter(middle, 0);
-		PLAYER.addCharacter(left);
-		PLAYER.equipCharacter(left, 1);
-		PLAYER.addCharacter(right);
-		PLAYER.equipCharacter(right, 2);
+		
+		PLAYER.addCharacter(slot1);
+		PLAYER.equipCharacter(slot1, 1);
+		PLAYER.addCharacter(slot2);
+		PLAYER.equipCharacter(slot2, 2);
+		PLAYER.addCharacter(slot3);
+		PLAYER.equipCharacter(slot3, 3);
+		PLAYER.addCharacter(slot4);
+		PLAYER.equipCharacter(slot4, 4);
+		PLAYER.addCharacter(slot5);
+		PLAYER.equipCharacter(slot5, 5);
 
 		while(!(line = READER.readLine()).equals("END")){
-			Character C = DataStorage.getCharacter(Integer.parseInt(line.trim()));
+			Follower C = DataStorage.getCharacter(Integer.parseInt(line.trim()));
 			PLAYER.addCharacter(C);
 		}
 		READER.close();

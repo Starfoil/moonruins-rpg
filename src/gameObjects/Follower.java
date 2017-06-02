@@ -1,6 +1,6 @@
 package gameObjects;
 
-public class Character {
+public class Follower {
 
 	public int characterID;
 	public String name;
@@ -12,7 +12,7 @@ public class Character {
 
 	public Stats stats;
 
-	public Character(int characterID, String name, int rarityID) {
+	public Follower(int characterID, String name, int rarityID) {
 		this.characterID = characterID;
 		this.name = name;
 		this.rarityID = rarityID;
@@ -43,7 +43,7 @@ public class Character {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Character other = (Character) obj;
+		Follower other = (Follower) obj;
 		if (characterID != other.characterID)
 			return false;
 		return true;

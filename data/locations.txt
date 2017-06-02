@@ -1,109 +1,31 @@
 Clearing
-Dirt, 100
-100, 0, 0, 0
-3, 0, 0, 0
-0, 0, 0, 0
+An empty clearing in a forest. The place looks very much serene as the trees sway 
+amongst the gentle breeze. No sounds could be heard asides the calming chirps of 
+distant birds as the ever so silence shrouds the forest.
+
+Overhead, the sun is bright over the zenith although much of the sunlight has been
+dissipated by the hanging branches leaving only small traces of light reaching the
+forest floor.
+
+Around you, there is no life to be found yet the presence of a paved path leading 
+into the trees catches your very eyes. Although faded into the ground, the sight of 
+old footprints could still be seen along the path leading somewhere.
+
+You see nowhere else to go and perhaps your only choice is to travel the mysterious 
+path but perhaps you should stick around for a bit first. You certainly do not want
+to wander off empty-handed and who knows what you might find around here...
+ENDDES
+Dirt, 100, 1, 15
 END
-Fields
-Dirt, 100
-100, 0, 0, 0
-5, 0, 0, 0
-2, 0, 0, 0
+Oldburry Fields
+A field located on the outskirts of Oldburry town.
+ENDDES
+Dirt, 100, 5, 25
 END
-Forest
-MR, 1, 100, 0, 0, 0, 1, 0, 0, 0
-Dirt, 100
-95, 5, 0, 0
-10, 3, 0, 0
-5, 0, 0, 0
-END
-Farms
-Dirt, 80 
-90, 10, 0, 0
-15, 5, 0, 0
-7, 1, 0, 0
-Stone, 20
-100, 0, 0, 0
-3, 0, 0, 0
-0, 0, 0, 0
-END
-Hills
-Stone, 95
-80, 20, 0, 0
-15, 5, 0, 0
-10, 0, 0, 0
-Gravel, 5
-100, 0, 0, 0
-5, 0, 0, 0
-0, 0, 0, 0
-END
-Mines
-Stone, 60
-60, 40, 0, 0
-25, 15, 0, 0
-25, 5, 0, 0
-Gravel, 35
-90, 10, 0, 0
-15, 5, 0, 0
-25, 5, 0, 0
-Clay, 5
-100, 0, 0, 0
-5, 0, 0, 0
-0, 0, 0, 0
-END
-Mountains
-Stone, 50
-25, 70, 5, 0
-150, 25, 5, 0
-250, 35, 0, 0
-Gravel, 45
-50, 48, 2, 0
-50, 25, 3, 0
-100, 50, 0, 0
-Granite, 5
-100, 0, 0, 0
-5, 0, 0, 0
-0, 0, 0, 0
-END
-Peak
-Stone, 80
-0, 50, 50, 0
-0, 500, 50, 0
-0, 500, 25, 0
-Granite, 17
-85, 15, 0, 0
-25, 5, 0, 0
-25, 5, 0, 0
-Iron, 3
-100, 0, 0, 0
-5, 0, 0, 0
-0, 0, 0, 0
-END
-Ravine
-Stone, 70
-0, 20, 77, 3
-0, 2000, 115, 3
-0, 1500, 125, 0
-Iron, 25
-85, 15, 0, 0
-8, 3, 0, 0
-15, 3, 0, 0
-Steel, 5
-100, 0, 0, 0
-4, 0, 0, 0
-0, 0, 0, 0
-END
-Volcano
-Obsidian, 65
-100, 0, 0, 0
-20, 0, 0, 0
-0, 0, 0, 0
-Iron, 25
-60, 32, 8, 0
-35, 17, 10, 0
-40, 25, 5, 0
-Steel, 10
-80, 20, 0, 0
-25, 10, 0, 0
-15, 5, 0, 0
+Oldburry Farms
+A farm located on the outskirts of Oldburry town. It seems as to somebody currently
+owns this place.
+ENDDES
+Dirt, 80, 5, 25 
+Stone, 20, 1, 5
 END

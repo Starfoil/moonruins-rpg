@@ -6,7 +6,7 @@ public class Quest {
 	public int questID;
 	public String name;
 	
-	public Resource resourceRequired;
+	public ResourceObject resourceRequired;
 	public int rarityRequired;
 	public int amountRequired;
 	
@@ -15,7 +15,7 @@ public class Quest {
 	
 	public String questDescription;
 
-	public Quest(int questID, String name, Resource resourceRequired,
+	public Quest(int questID, String name, ResourceObject resourceRequired,
 			int rarityRequired, int amountRequired) {
 		this.questID = questID;
 		this.name = name;

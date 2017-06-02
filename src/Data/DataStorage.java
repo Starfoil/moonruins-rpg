@@ -1,13 +1,14 @@
 package Data;
 
-import gameObjects.Character;
+import gameObjects.Follower;
 import gameObjects.Crate;
 import gameObjects.Quest;
-import gameObjects.Resource;
+import gameObjects.ResourceObject;
 import items.Item;
 
 import java.util.ArrayList;
 
+import Player.PLAYER;
 import location.Connection;
 import location.Location;
 import locationTown.TownLocation;
@@ -15,9 +16,9 @@ import locationTown.TownLocation;
 public class DataStorage {
 
 	public static ArrayList<Connection> CON = new ArrayList<Connection>();
-	public static ArrayList<Resource> RES = new ArrayList<Resource>();
+	public static ArrayList<ResourceObject> RES = new ArrayList<ResourceObject>();
 	public static ArrayList<Location> LOC = new ArrayList<Location>();
-	public static ArrayList<Character> CHR = new ArrayList<Character>();
+	public static ArrayList<Follower> CHR = new ArrayList<Follower>();
 	public static ArrayList<Item> ITM = new ArrayList<Item>();
 	public static ArrayList<Quest> QST = new ArrayList<Quest>();
 	public static ArrayList<Crate> CRA = new ArrayList<Crate>();
@@ -27,6 +28,25 @@ public class DataStorage {
 		for (Location L : LOC){
 			L.clean();
 		}
+	}
+	
+	public static void unlockAll(){
+		for (Item I : ITM){
+			PLAYER.addItem(I);
+		}
+		for (Follower F : CHR){
+			PLAYER.addCharacter(F);
+		}
+	}
+	
+	public static Connection getConnection(String startPoint, String endPoint){
+		for (Connection C : CON){
+			if(C.locationA.name.equals(startPoint) && C.locationB.name.equals(endPoint) ||
+					C.locationA.name.equals(endPoint) && C.locationB.name.equals(startPoint)){
+				return C;
+			}
+		}
+		return null;
 	}
 	
 	public static Quest getQuest(int questID){
@@ -46,18 +66,36 @@ public class DataStorage {
 		}
 		return null;
 	}
+	
+	public static Item getItem(String itemName){
+		for (Item I : ITM){
+			if(I.name.equals(itemName)){
+				return I;
+			}
+		}
+		return null;
+	}
 
-	public static Character getCharacter(int charID){
-		for (Character C : CHR){
+	public static Follower getCharacter(int charID){
+		for (Follower C : CHR){
 			if(C.characterID == charID){
 				return C;
 			}
 		}
 		return null;
 	}
+	
+	public static Follower getCharacter(String name){
+		for (Follower C : CHR){
+			if(C.name.equals(name)){
+				return C;
+			}
+		}
+		return null;
+	}
 
-	public static Resource getResource(String name){
-		for (Resource R : RES){
+	public static ResourceObject getResource(String name){
+		for (ResourceObject R : RES){
 			if(R.name.equals(name)){
 				return R;
 			}

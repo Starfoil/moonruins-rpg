@@ -1,66 +1,54 @@
 package inventory;
 
-import gameObjects.Resource;
+import gameObjects.ResourceObject;
+import gameObjects.ResourcePackage;
 
 import java.util.ArrayList;
 
 public class ResourceInventory {
 
-	public ArrayList<ResourceSubInventory> resources;
+	public ArrayList<ResourcePackage> resources;
 
 	public ResourceInventory() {
-		this.resources = new ArrayList<ResourceSubInventory>();
+		this.resources = new ArrayList<ResourcePackage>();
 	}
 
-	public void addInventory(Resource item){
-		this.resources.add(new ResourceSubInventory(item));
-	}
-	
-	public boolean hasResource(Resource item){
-		for (ResourceSubInventory RI : resources){
-			if (RI.resource.equals(item)){
-				return true;
+	private ResourcePackage getInventory(ResourceObject item){
+		for (ResourcePackage R : this.resources){
+			if (R.resource.equals(item)){
+				return R;
 			}
 		}
-		return false;
-	}
-
-	public ResourceSubInventory getInventory(Resource item){
-		for (ResourceSubInventory RI : this.resources){
-			if (RI.resource.equals(item)){
-				return RI;
-			}
-		}
+		
 		return null;
 	}
-
-	public void addItems(Resource item, int rarityID, int amount){
-		ResourceSubInventory RI = getInventory(item);
-		RI.add(rarityID, amount);
+	
+	public void addItems(ResourceObject item, int addAmount){
+		ResourcePackage R = getInventory(item);
+		if (R != null) R.add(addAmount);
+		else{
+			this.resources.add(new ResourcePackage(item, addAmount));
+		}
 	}
 
-	public void removeItems(Resource item, int rarityID, int amount){
-		ResourceSubInventory RI = getInventory(item);
-		RI.remove(rarityID, amount);
+	public int removeItems(ResourceObject item, int removeAmount){
+		ResourcePackage R = getInventory(item);
+		if (R != null) return R.remove(removeAmount);
+		else return -1;
 	}
 
-	public boolean hasItems(Resource item, int rarityID, int amount){
-		ResourceSubInventory RI = getInventory(item);
-		return RI.checkAmount(rarityID, amount);
+	public boolean hasItems(ResourceObject item, int checkAmount){
+		ResourcePackage R = getInventory(item);
+		if (R != null) return R.check(checkAmount);
+		else return false;
 	}
 
 	@Override
 	public String toString() {
 		String S = "";
-		for (ResourceSubInventory RI : this.resources){
-			if (!RI.isEmpty()) {S += RI.toString() + "\r\n";}
+		for (ResourcePackage R : this.resources){
+			S += R.toString() + "\n";
 		}
 		return S;
 	}
-	
-	public void sort(){
-		
-	}
-
-
 }

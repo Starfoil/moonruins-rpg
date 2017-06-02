@@ -1,13 +1,13 @@
 package locationTown;
 
-import gameObjects.Character;
+import gameObjects.Follower;
 
 import java.util.ArrayList;
 import java.util.Random;
 
 public class Inn {
 	
-	public ArrayList<Character> innCharacters;
+	public ArrayList<Follower> innCharacters;
 	private int recruitChance;
 	public int fireRequired;
 	
@@ -15,7 +15,7 @@ public class Inn {
 	
 	public Inn(int fireRequired){
 		this.fireRequired = fireRequired;
-		this.innCharacters = new ArrayList<Character>();
+		this.innCharacters = new ArrayList<Follower>();
 		recruitChance = 0;
 	}
 	
@@ -23,7 +23,7 @@ public class Inn {
 		return !innCharacters.isEmpty() && recruitChance != 0;
 	}
 	
-	public void addCharacterToInn(Character cha, int chance){
+	public void addCharacterToInn(Follower cha, int chance){
 		if(!this.innCharacters.contains(cha)){
 			this.recruitChance += chance;
 			cha.setObtainChance(chance);
@@ -31,11 +31,11 @@ public class Inn {
 		}
 	}
 	
-	public Character recruit(){
+	public Follower recruit(){
 		if(!this.innCharacters.isEmpty() && canRecruit()){
 			int tempPercentage = 0;
 			int chance = RNG.nextInt(this.recruitChance) + 1;
-			for (Character C : this.innCharacters){
+			for (Follower C : this.innCharacters){
 				tempPercentage += C.chanceOfObtain;
 				if(chance < tempPercentage){
 					this.innCharacters.remove(C);
@@ -51,7 +51,7 @@ public class Inn {
 	@Override
 	public String toString() {
 		String s = "[Fire : " + this.fireRequired + "] \n\n";
-		for (Character C : innCharacters){
+		for (Follower C : innCharacters){
 			s += "[" + C.characterID + "] " + C.name + "\n";
 		}
 		return s;

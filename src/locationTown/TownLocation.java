@@ -1,7 +1,7 @@
 package locationTown;
 
 import items.*;
-import gameObjects.Character;
+import gameObjects.Follower;
 import gameObjects.Quest;
 import gameObjects.Reward;
 import location.Location;
@@ -44,7 +44,7 @@ public class TownLocation extends Location{
 		return shop.purchaseItem(item);
 	}
 	
-	public Character campfire(){
+	public Follower campfire(){
 		return inn.recruit();
 	}
 	

@@ -5,6 +5,7 @@ import gameObjects.Stats;
 import java.util.ArrayList;
 import java.util.Random;
 
+import Player.PLAYER;
 import location.Location;
 
 public class GatherLocation extends Location{
@@ -26,17 +27,17 @@ public class GatherLocation extends Location{
 
 	public void addGatheringChance(GatherChance GC){
 		gatheringChance.add(GC);
-		gatheringPercentage += GC.chance;
+		gatheringPercentage += GC.resourceChance;
 	}
 
 	//Gather System	
 
-
+	// Get which resource we're gathering from this location
 	private GatherChance gatherID(){
 		int CHANCE = RNG.nextInt(gatheringPercentage) + 1;
 		int percentage = 0;
 		for (GatherChance GC : gatheringChance){
-			percentage += GC.chance;
+			percentage += GC.resourceChance;
 			if (CHANCE <= percentage){
 				return GC;
 			}
@@ -44,82 +45,23 @@ public class GatherLocation extends Location{
 		return null;
 	}
 
-	private int gatherRarity(GatherChance GC, Stats stat){
-		int reinforcedBoost = GC.reinforcedChance * stat.RFF / 100;
-		int enrichedBoost = GC.enrichedChance * stat.ERF / 100;
-		int augmentedBoost = GC.augmentedChance * stat.AMF / 100;
-		int CHANCE = RNG.nextInt(gatheringPercentage) + 1 + reinforcedBoost + enrichedBoost + augmentedBoost;
-		if (CHANCE <= GC.regularChance){
-			return 0;
-		}
-		else if (CHANCE <= GC.regularChance + GC.reinforcedChance + reinforcedBoost){
-			return 1;
-		}
-		else if (CHANCE <= GC.regularChance + GC.reinforcedChance + GC.enrichedChance + reinforcedBoost + enrichedBoost){
-			return 2;
-		}
-		else if (CHANCE <= GC.regularChance + GC.reinforcedChance + GC.enrichedChance + GC.augmentedChance + 
-				reinforcedBoost + enrichedBoost + augmentedBoost){
-			return 3;
-		}
-		else return -1;
+	// Get the amount of resource we're gathering
+	private int gatherAmount(GatherChance GC, double boostAmount){
+		int amountGathered = RNG.nextInt(GC.resourceMaxAmount - GC.resourceMinAmount) 
+				+ GC.resourceMinAmount;
+		return (int) (amountGathered * boostAmount);
 	}
 
-	private int gatherAmount(GatherChance GC, int rarityID, Stats stat){
-		if (rarityID == 0){
-			int amountGathered = RNG.nextInt(GC.regularAmount) + 1 + GC.regularMAmount;
-			int amountExtra = amountGathered * stat.WIL / 100;
-			return amountGathered + amountExtra;
-		}
-		else if (rarityID == 1){
-			int amountGathered = RNG.nextInt(GC.reinforcedAmount) + 1 + GC.reinforcedMAmount;
-			int amountExtra = amountGathered * stat.RFW / 100;
-			return amountGathered + amountExtra;
-		}
-		else if (rarityID == 2){
-			int amountGathered = RNG.nextInt(GC.enrichedAmount) + 1 + GC.enrichedMAmount;
-			int amountExtra = amountGathered * stat.ERW / 100;
-			return amountGathered + amountExtra;
-		}
-		else if (rarityID == 3){
-			int amountGathered = RNG.nextInt(GC.augmentedAmount) + 1 + GC.augmentedMAmount;
-			int amountExtra = amountGathered * stat.AMW / 100;
-			return amountGathered + amountExtra;
-		}
-		else return -1;
-	}
+//	private int gatherMoney(GatherChance GC, int amount, int boostAmount){
+//		int moneyEarned = GC.resource.value * amount;
+//		return (int) (moneyEarned * boostAmount);
+//	}
 
-	private int gatherMoney(GatherChance GC, int rarityID, int amount, int affluenceBoost){
-		if (rarityID == 0){
-			int moneyEarned = GC.resource.regularMoney * amount;
-			int moneyExtra = moneyEarned * affluenceBoost / 100;
-			return moneyEarned + moneyExtra;
-		}
-		else if (rarityID == 1){
-			int moneyEarned = GC.resource.reinforcedMoney * amount;
-			int moneyExtra = moneyEarned * affluenceBoost / 100;
-			return moneyEarned + moneyExtra;
-		}
-		else if (rarityID == 2){
-			int moneyEarned = GC.resource.enrichedMoney * amount;
-			int moneyExtra = moneyEarned * affluenceBoost / 100;
-			return moneyEarned + moneyExtra;
-		}
-		else if (rarityID == 3){
-			int moneyEarned = GC.resource.augmentedMoney * amount;
-			int moneyExtra = moneyEarned * affluenceBoost / 100;
-			return moneyEarned + moneyExtra;
-		}
-		else return -1;
-	}
-
-	public GatherReport gather(Stats stat){
+	public GatherReport gather(){
 		if(!this.gatheringChance.isEmpty()){
 			GatherChance ID = gatherID();
-			int rarity = gatherRarity(ID, stat);
-			int amount = gatherAmount(ID, rarity, stat);
-			int money = gatherMoney(ID, rarity, amount, stat.AFF);
-			GatherReport GR = new GatherReport(ID.resource, rarity, amount, money);
+			int amount = gatherAmount(ID, PLAYER.stat.multiplier);
+			GatherReport GR = new GatherReport(ID.resource, amount);
 			return GR;
 		}
 		return null;

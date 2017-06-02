@@ -30,8 +30,7 @@ public abstract class Item {
 	
 	@Override
 	public String toString() {
-		return "Item [itemID=" + itemID + ", name=" + name + ", rarityID="
-				+ rarityID + ", cost=" + cost + ", stats=" + stats + "]";
+		return name + "[" + itemID + "]";
 	}
 	
 	

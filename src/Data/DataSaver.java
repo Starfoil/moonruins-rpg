@@ -3,7 +3,7 @@ package Data;
 import inventory.*;
 import items.*;
 import Player.PLAYER;
-import gameObjects.Character;
+import gameObjects.Follower;
 import gameObjects.Quest;
 import gameObjects.ResourcePackage;
 import location.*;
@@ -18,10 +18,15 @@ import java.io.IOException;
 
 public class DataSaver {
 
-	public static void SAVE() throws IOException{
-		DataSaver.saveConnections("DATA\\connections.txt");
-		DataSaver.savePlayerData("DATA\\playerdata.txt");
-		DataSaver.saveTowns("DATA\\towns.txt");
+	public static void SAVE(){
+		try {
+			DataSaver.saveConnections("DATA\\connections.txt");
+			DataSaver.savePlayerData("DATA\\playerdata.txt");
+			DataSaver.saveTowns("DATA\\towns.txt");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public static void saveConnections(String path) throws IOException{
@@ -36,12 +41,16 @@ public class DataSaver {
 		for (Connection C : DataStorage.CON){
 			s = C.locationA.name + ", " + C.locationB.name + ", ";
 			if (C.isBuilt){ s+= "1";} else { s+= "0";}
-			s += ", " + C.travelCost + "\n";
-			for (ResourcePackage CC : C.connectionCost){
-				s += CC.resource.name + ", " + CC.rarityID + ", " + CC.amount + "\n";
-			}
-			s+= "END\n";
+			s += ", " + C.travelCost;
 			WRITER.write(s);
+			WRITER.newLine();
+			for (ResourcePackage CC : C.connectionCost){
+				s = CC.resource.name + ", " + CC.amount;
+				WRITER.write(s);
+				WRITER.newLine();
+			}
+			WRITER.write("END");
+			WRITER.newLine();
 		}
 
 		WRITER.close();
@@ -64,7 +73,7 @@ public class DataSaver {
 					TL.altar.sapphires + ", " + TL.altar.rubies;
 			WRITER.write(s);
 			WRITER.newLine();
-			for (Character C : TL.inn.innCharacters){
+			for (Follower C : TL.inn.innCharacters){
 				s = C.characterID + ", " + C.chanceOfObtain;
 				WRITER.write(s);
 				WRITER.newLine();
@@ -101,8 +110,8 @@ public class DataSaver {
 		WRITER.newLine();
 		WRITER.write(PLAYER.location.name);
 		WRITER.newLine();
-		s = PLAYER.coins.gold  + ", " + PLAYER.coins.silver + ", " + PLAYER.coins.copper;
-		WRITER.write(s);
+		//s = PLAYER.coins.gold  + ", " + PLAYER.coins.silver + ", " + PLAYER.coins.copper;
+		WRITER.write(Integer.toString(PLAYER.coins.totalMoney));
 		WRITER.newLine();
 		s = PLAYER.gems.emerald + ", " + PLAYER.gems.sapphire  + ", " + PLAYER.gems.ruby  + ", " + PLAYER.gems.star;
 		WRITER.write(s);
@@ -110,9 +119,8 @@ public class DataSaver {
 		s = PLAYER.misc.fire  + ", " + PLAYER.misc.keys;
 		WRITER.write(s);
 		WRITER.newLine();
-		for (ResourceSubInventory RI : PLAYER.inventory.resources){
-			s = RI.resource.name + ", " + RI.REGULAR + ", " + 
-					RI.REINFORCED + ", " + RI.ENRICHED + ", " + RI.AUGMENTED + ", " + RI.STARFOIL;
+		for (ResourcePackage R : PLAYER.inventory.resources){
+			s = R.resource.name + ", " + R.amount;
 			WRITER.write(s);
 			WRITER.newLine();
 		}
@@ -135,12 +143,14 @@ public class DataSaver {
 		WRITER.write("ENDITM");
 		WRITER.newLine();
 		s = "";
-		if(PLAYER.characters.middle != null){ s += PLAYER.characters.middle.characterID + ", "; } else { s+= "0, ";}
-		if(PLAYER.characters.left != null){ s += PLAYER.characters.left.characterID + ", "; } else { s+= "0, ";}
-		if(PLAYER.characters.right != null){ s += PLAYER.characters.right.characterID; } else { s+= "0";}
+		if(PLAYER.characters.slot1 != null){ s += PLAYER.characters.slot1.characterID + ", "; } else { s+= "0, ";}
+		if(PLAYER.characters.slot2 != null){ s += PLAYER.characters.slot2.characterID + ", "; } else { s+= "0, ";}
+		if(PLAYER.characters.slot3 != null){ s += PLAYER.characters.slot3.characterID + ", "; } else { s+= "0, ";}
+		if(PLAYER.characters.slot4 != null){ s += PLAYER.characters.slot4.characterID + ", "; } else { s+= "0, ";}
+		if(PLAYER.characters.slot5 != null){ s += PLAYER.characters.slot5.characterID; } else { s+= "0";}
 		WRITER.write(s);
 		WRITER.newLine();
-		for (Character C : PLAYER.characters.characterInventory){
+		for (Follower C : PLAYER.characters.characterInventory){
 			s = "" + C.characterID;
 			WRITER.write(s);
 			WRITER.newLine();

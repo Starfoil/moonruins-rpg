@@ -1,6 +1,6 @@
 package location;
 
-import gameObjects.Resource;
+import gameObjects.ResourceObject;
 import gameObjects.ResourcePackage;
 
 import java.util.ArrayList;
@@ -28,8 +28,8 @@ public class Connection {
 		this.travelCost = travelCost;
 	}
 	
-	public void addConnectionCost(Resource resource, int rarityID, int amount){
-		connectionCost.add(new ResourcePackage(resource, rarityID, amount));
+	public void addConnectionCost(ResourceObject resource, int amount){
+		connectionCost.add(new ResourcePackage(resource, amount));
 	}
 	
 	public boolean contains(Location loc){
@@ -46,16 +46,16 @@ public class Connection {
 	}
 	
 	public String displayConnection(){
-		String s = "[Connection : " +locationA.name + " -> "+ locationB.name + "]    ";
+		String s = "[" +locationA.name + " -> "+ locationB.name + " : ";
 		if(isBuilt){ s += "BUILT"; }
 		else{ s += "NOT BUILT"; }
+		s += " ]";
 		return s;
 	}
 	
 	public String displayCost(){
 		String s = "";
 		if(!isBuilt){
-			s = "Connection is not built\nCost of Connection : \n";
 			for (ResourcePackage CC: connectionCost){
 				s+= CC + "\n";
 			}
@@ -67,7 +67,7 @@ public class Connection {
 	
 	@Override
 	public String toString() {
-		return displayConnection() + "\n" + displayCost();
+		return displayConnection();
 	}
 
 	

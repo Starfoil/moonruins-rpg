@@ -7,12 +7,6 @@ public class Ring extends Item{
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
-	public String toString() {
-		return "RingID " + itemID + " : " + name + "\n"
-				+ "Rarity ID : " + rarityID + "   Cost : " + cost + "\n"
-				+ stats + "\n";
-	}
 	
 	
 

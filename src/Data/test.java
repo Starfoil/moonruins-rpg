@@ -14,33 +14,37 @@ public class test {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		
-		DataLoader.loadResources("DATA\\resources.txt");
+		DataLoader.loadResources("DATA\\resources.csv");
+		//System.out.println(DataStorage.RES);
 		
 		DataLoader.loadGatherLocations("DATA\\locations.txt");	
+		//System.out.println(DataStorage.LOC);
 		
 		DataLoader.loadItems("DATA\\items.csv");
+		//System.out.println(DataStorage.ITM);
 		
 		DataLoader.loadCharacters("DATA\\characters.txt");
+		//System.out.println(DataStorage.CHR);
 		
 		DataLoader.loadQuests("DATA\\quests.txt");
 		
 		DataLoader.loadTowns("DATA\\towns.txt");
 		
 		DataLoader.loadConnections("DATA\\connections.txt");
-		
-		DataLoader.loadBlueprints("DATA\\blueprints.txt");
+		//System.out.println(DataStorage.CON);
 		
 		DataLoader.loadCrates("DATA\\crates.txt");
 		
+		//DataLoader.loadBlueprints("DATA\\blueprints.txt");
+		
 		DataLoader.loadSaveData("DATA\\playerdata.txt");
 		
-		//System.out.println(PLAYER.characters.characterInventory);
 		
-		DataSaver.saveConnections("DATA\\connections.txt");
+		DataSaver.saveConnections("DATA\\Nconnections.txt");
 		
-		//DataSaver.savePlayerData("DATA\\playerdata.txt");
+		DataSaver.savePlayerData("DATA\\Nplayerdata.txt");
 		
-		DataSaver.saveTowns("DATA\\towns.txt");
+		//DataSaver.saveTowns("DATA\\towns.txt");
 		
 		
 		//System.out.println(DataStorage.getItem(222).name);
@@ -71,11 +75,12 @@ public class test {
 //			System.out.println(C.roll().name);
 //		}
 		//System.out.println(DataStorage.CON);
-		System.out.println(PLAYER.location);
-		Location x = DataStorage.LOC.get(9);
-		System.out.println(x);
+		//System.out.println(PLAYER.location);
+		//Location x = DataStorage.LOC.get(9);
+		//System.out.println(x);
 		//System.out.println(PLAYER.location.hasConnection(x));
-		System.out.println(PLAYER.location.getRoute(x));
+		//System.out.println(PLAYER.display());
+		System.out.println("Success");
 	}
 
 }

@@ -1,6 +1,5 @@
 package Player;
 import gameObjects.*;
-import gameObjects.Character;
 import inventory.CharacterInventory;
 import inventory.CurrencyInventory;
 import inventory.EquipmentInventory;
@@ -10,6 +9,7 @@ import inventory.ResourceInventory;
 import items.*;
 
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -33,33 +33,34 @@ public class PLAYER {
 	public static MiscInventory misc;
 	public static EquipmentInventory equips;
 	public static CharacterInventory characters;
+	public static Stats stat;
 
 	public static void setName(String name){
 		PLAYERNAME = name;
 	}
 
-	public static void newGame(){
-		inventory = new ResourceInventory();
-		for (Resource R : DataStorage.RES){addResources(R, 0, 0);}
-		coins = new CurrencyInventory();
-		gems = new GemInventory();
-		equips = new EquipmentInventory();
-		characters = new CharacterInventory();
-		misc = new MiscInventory();
-		location = DataStorage.LOC.get(0);
-		try {
-			DataStorage.LOC = new ArrayList<Location>();
-			DataStorage.TWN = new ArrayList<TownLocation>();
-			DataStorage.CON = new ArrayList<Connection>();
-			DataLoader.loadGatherLocations("DATA\\locations.txt");
-			DataLoader.loadTowns("DATA\\NEWtowns.txt");
-			DataLoader.loadConnections("DATA\\NEWconnections.txt");
-		} catch (NumberFormatException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+	//	public static void newGame(){
+	//		inventory = new ResourceInventory();
+	//		for (Resource R : DataStorage.RES){addResources(R, 0);}
+	//		coins = new CurrencyInventory();
+	//		gems = new GemInventory();
+	//		equips = new EquipmentInventory();
+	//		characters = new CharacterInventory();
+	//		misc = new MiscInventory();
+	//		location = DataStorage.LOC.get(0);
+	//		try {
+	//			DataStorage.LOC = new ArrayList<Location>();
+	//			DataStorage.TWN = new ArrayList<TownLocation>();
+	//			DataStorage.CON = new ArrayList<Connection>();
+	//			DataLoader.loadGatherLocations("DATA\\locations.txt");
+	//			DataLoader.loadTowns("DATA\\NEWtowns.txt");
+	//			DataLoader.loadConnections("DATA\\NEWconnections.txt");
+	//		} catch (NumberFormatException e) {
+	//			e.printStackTrace();
+	//		} catch (IOException e) {
+	//			e.printStackTrace();
+	//		}
+	//	}
 
 	public static void Initialize(Location loc){
 		inventory = new ResourceInventory();
@@ -69,6 +70,8 @@ public class PLAYER {
 		equips = new EquipmentInventory();
 		characters = new CharacterInventory();
 		misc = new MiscInventory();
+		stat = new Stats(1, 0);
+		processPlayerStats();
 	}
 
 	public static String display(){
@@ -83,114 +86,20 @@ public class PLAYER {
 	}
 
 	private static void process(GatherReport GC){
-		inventory.addItems(GC.resource, GC.rarityGathered, GC.amountGathered);
-		coins.gainMoney(GC.moneyEarned);
+		inventory.addItems(GC.resource, GC.amountGathered);
 	}
 
-	private static Stats processPlayerStats(){
-		int totalRFF = 0;
-		if(equips.leftRing != null){ totalRFF += equips.leftRing.stats.RFF;}
-		if(equips.rightRing != null){ totalRFF += equips.rightRing.stats.RFF;}
-		if(characters.middle != null){ totalRFF += characters.middle.stats.RFF;}
-		if(characters.left != null){ totalRFF += characters.left.stats.RFF;}
-		if(characters.right != null){ totalRFF += characters.right.stats.RFF;}
+	public static void processPlayerStats(){
+		double hands = 1;
+		if(equips.leftRing != null){ hands += equips.leftRing.stats.multiplier;}
+		if(equips.rightRing != null){ hands += equips.rightRing.stats.multiplier;}
+		if(equips.gloves != null){ hands += equips.gloves.stats.multiplier;}
 
-		int totalERF = 0;
-		if(equips.leftRing != null){ totalERF += equips.leftRing.stats.ERF;}
-		if(equips.rightRing != null){ totalERF += equips.rightRing.stats.ERF;}
-		if(characters.middle != null){ totalERF += characters.middle.stats.ERF;}
-		if(characters.left != null){ totalERF += characters.left.stats.ERF;}
-		if(characters.right != null){ totalERF += characters.right.stats.ERF;}
-
-		int totalAMF = 0;
-		if(equips.leftRing != null){ totalAMF += equips.leftRing.stats.AMF;}
-		if(equips.rightRing != null){ totalAMF += equips.rightRing.stats.AMF;}
-		if(characters.middle != null){ totalAMF += characters.middle.stats.AMF;}
-		if(characters.left != null){ totalAMF += characters.left.stats.AMF;}
-		if(characters.right != null){ totalAMF += characters.right.stats.AMF;}
-
-		int totalSRF = 0;
-		if(equips.leftRing != null){ totalSRF += equips.leftRing.stats.SRF;}
-		if(equips.rightRing != null){ totalSRF += equips.rightRing.stats.SRF;}
-		if(characters.middle != null){ totalSRF += characters.middle.stats.SRF;}
-		if(characters.left != null){ totalSRF += characters.left.stats.SRF;}
-		if(characters.right != null){ totalSRF += characters.right.stats.SRF;}
-
-		int totalWIL = 0;
-		if(equips.gloves != null){ totalWIL += equips.gloves.stats.WIL;}
-		if(characters.middle != null){ totalWIL += characters.middle.stats.WIL;}
-		if(characters.left != null){ totalWIL += characters.left.stats.WIL;}
-		if(characters.right != null){ totalWIL += characters.right.stats.WIL;}
-
-		int totalRFW = 0;
-		if(equips.gloves != null){ totalRFW += equips.gloves.stats.RFW;}
-		if(characters.middle != null){ totalRFW += characters.middle.stats.RFW;}
-		if(characters.left != null){ totalRFW += characters.left.stats.RFW;}
-		if(characters.right != null){ totalRFW += characters.right.stats.RFW;}
-
-		int totalERW = 0;
-		if(equips.gloves != null){ totalERW += equips.gloves.stats.ERW;}
-		if(characters.middle != null){ totalERW += characters.middle.stats.ERW;}
-		if(characters.left != null){ totalERW += characters.left.stats.ERW;}
-		if(characters.right != null){ totalERW += characters.right.stats.ERW;}
-
-		int totalAMW = 0;
-		if(equips.gloves != null){ totalAMW += equips.gloves.stats.AMW;}
-		if(characters.middle != null){ totalAMW += characters.middle.stats.AMW;}
-		if(characters.left != null){ totalAMW += characters.left.stats.AMW;}
-		if(characters.right != null){ totalAMW += characters.right.stats.AMW;}
-
-		int totalEML = 0;
-		if(equips.pendant != null){ totalEML += equips.pendant.stats.EML;}
-		if(characters.middle != null){ totalEML += characters.middle.stats.EML;}
-		if(characters.left != null){ totalEML += characters.left.stats.EML;}
-		if(characters.right != null){ totalEML += characters.right.stats.EML;}
-
-		int totalSPL = 0;
-		if(equips.pendant != null){ totalSPL += equips.pendant.stats.SPL;}
-		if(characters.middle != null){ totalSPL += characters.middle.stats.SPL;}
-		if(characters.left != null){ totalSPL += characters.left.stats.SPL;}
-		if(characters.right != null){ totalSPL += characters.right.stats.SPL;}
-
-		int totalRBL = 0;
-		if(equips.pendant != null){ totalRBL += equips.pendant.stats.RBL;}
-		if(characters.middle != null){ totalRBL += characters.middle.stats.RBL;}
-		if(characters.left != null){ totalRBL += characters.left.stats.RBL;}
-		if(characters.right != null){ totalRBL += characters.right.stats.RBL;}
-
-		int totalSRL = 0;
-		if(equips.pendant != null){ totalSRL += equips.pendant.stats.SRL;}
-		if(characters.middle != null){ totalSRL += characters.middle.stats.SRL;}
-		if(characters.left != null){ totalSRL += characters.left.stats.SRL;}
-		if(characters.right != null){ totalSRL += characters.right.stats.SRL;}
-
-		int totalMNC = 0;
-		if(equips.talisman != null){ totalMNC += equips.talisman.stats.MNC;}
-		if(characters.middle != null){ totalMNC += characters.middle.stats.MNC;}
-		if(characters.left != null){ totalMNC += characters.left.stats.MNC;}
-		if(characters.right != null){ totalMNC += characters.right.stats.MNC;}
-
-		int totalAFF = 0;
-		if(equips.talisman != null){ totalAFF += equips.talisman.stats.AFF;}
-		if(characters.middle != null){ totalAFF += characters.middle.stats.AFF;}
-		if(characters.left != null){ totalAFF += characters.left.stats.AFF;}
-		if(characters.right != null){ totalAFF += characters.right.stats.AFF;}
-
-		int totalVNT = 0;
-		if(equips.talisman != null){ totalVNT += equips.talisman.stats.VNT;}
-		if(characters.middle != null){ totalVNT += characters.middle.stats.VNT;}
-		if(characters.left != null){ totalVNT += characters.left.stats.VNT;}
-		if(characters.right != null){ totalVNT += characters.right.stats.VNT;}
-
-		int totalHAS = 0;
-		if(equips.boots != null){ totalHAS += equips.boots.stats.HAS;}
-		if(characters.middle != null){ totalHAS += characters.middle.stats.HAS;}
-		if(characters.left != null){ totalHAS += characters.left.stats.HAS;}
-		if(characters.right != null){ totalHAS += characters.right.stats.HAS;}
-
-		Stats totalStats = new Stats(totalRFF, totalERF, totalAMF, totalSRF, totalWIL, totalRFW, totalERW, totalAMW,
-				totalEML, totalSPL, totalRBL, totalSRL, totalMNC, totalAFF, totalVNT, totalHAS);
-		return totalStats;
+		double magic = 0;
+		if(equips.leftRing != null){ magic += equips.leftRing.stats.magicFind;}
+		if(equips.rightRing != null){ magic += equips.rightRing.stats.magicFind;}
+		if(equips.pendant != null){ hands += equips.pendant.stats.multiplier;}
+		stat.updateStat(hands, magic);
 	}
 
 	public static String travel(Location loc){
@@ -198,18 +107,16 @@ public class PLAYER {
 		if (C != null && C.isBuilt){
 			if(coins.totalMoney > C.travelCost){
 				location = loc;
-				coins.loseMoney(C.travelCost);
+				coins.remove(C.travelCost);
 				return "Traveled to " + loc.name;
 			}
-			return "Not enough money to travel to location";
+			return "Not enough money";
 		}
-		return "No valid built connection to specified location";
+		return "No valid selection";
 	}
-
-	public static void addCoins(int coinID, int amount){
-		if(coins != null){
-			coins.add(coinID, amount);
-		}
+	
+	public static void addCoins(int amount){
+		coins.add(amount);
 	}
 
 	public static void addGems(int gemID, int amount){
@@ -218,39 +125,36 @@ public class PLAYER {
 		}
 	}
 
-	public static void addResources(Resource item, int rarityID, int amount){
-		if(inventory.hasResource(item)){
-			inventory.addItems(item, rarityID, amount);
-		}
-		else{
-			inventory.addInventory(item);
-			inventory.addItems(item, rarityID, amount);
-		}
+	public static void addResources(ResourceObject item, int amount){
+		inventory.addItems(item, amount);
 	}
 
-	public static String buildConnection(Location loc){
-		if(location.getListedConnections(0).contains(loc)){
-			if(location.buildConnection(loc)){
-				return "Connection has been built";
+	public static String buildConnection(Connection c){
+		if(hasConnectionCost(c)){
+			for (ResourcePackage R : c.connectionCost){
+				inventory.removeItems(R.resource, R.amount);
 			}
+			c.build();
+			return "Connection has been built";
+		}else if (c == null){
+			return "No valid selection";
+		}else{
 			return "You do not have the required materials";
+		}		
+	}
+
+	private static boolean hasConnectionCost(Connection c){
+		for (ResourcePackage R : c.connectionCost){
+			if(!inventory.hasItems(R.resource, R.amount)) return false;
 		}
-		return "Connection to specified location was not found";
+		return true;
 	}
 
 	public static String gather(){
 		if(location instanceof GatherLocation){
-			int MRChance = RNG.nextInt(100) + 1;
-			if (((GatherLocation)location).moonRuin != null && MRChance <= ((GatherLocation)location).moonRuin.encounterChance){
-				int gemIDGathered = ((GatherLocation)location).moonRuin.gatherID();
-				addGems(gemIDGathered, ((GatherLocation)location).moonRuin.gatherAmount(gemIDGathered));
-				return "MOONRUINS!";
-			}
-			else{
-				GatherReport GR = ((GatherLocation)location).gather(processPlayerStats());
-				process(GR);
-				return GR.toString();
-			}
+			GatherReport GR = ((GatherLocation)location).gather();
+			process(GR);
+			return GR.toString();
 		}
 		return "Not in a gather location";
 	}
@@ -262,7 +166,7 @@ public class PLAYER {
 		}
 	}
 
-	public static void addCharacter(Character cha){
+	public static void addCharacter(Follower cha){
 		if(!characters.characterInventory.contains(cha) && cha != null){
 			characters.addCharacter(cha);
 		}
@@ -277,7 +181,7 @@ public class PLAYER {
 		return "You do not own this item you are wishing to equip";
 	}
 
-	public static String equipCharacter(Character cha, int slotID){
+	public static String equipCharacter(Follower cha, int slotID){
 		if (characters.characterInventory.contains(cha) && cha != null){
 			characters.deEquipCharacter(slotID);
 			characters.equipCharacter(cha, slotID);
@@ -290,7 +194,7 @@ public class PLAYER {
 		if(location instanceof TownLocation){
 			if(((TownLocation) location).shop.shopInventory.contains(item)){
 				if(coins.totalMoney >= item.cost){
-					coins.loseMoney(item.cost);
+					coins.remove(item.cost);
 					Item itemPurchased = ((TownLocation) location).purchase(item);
 					equips.addItem(itemPurchased);
 					return "Sucessfully purchased " + itemPurchased.name;
@@ -306,7 +210,7 @@ public class PLAYER {
 		if(location instanceof TownLocation){
 			if(misc.checkFire(((TownLocation)location).inn.fireRequired)){
 				misc.removeFire(((TownLocation)location).inn.fireRequired);
-				Character characterObtained = ((TownLocation)location).campfire();
+				Follower characterObtained = ((TownLocation)location).campfire();
 				if (characterObtained != null){
 					characters.addCharacter(characterObtained);
 					return "Obtained and added " + characterObtained.name + " to inventory.";
@@ -318,26 +222,26 @@ public class PLAYER {
 		return "Not in town";
 	}
 
-	public static void craftItem(Item item){
-		if(location instanceof TownLocation){
-			Blueprint BI = ((TownLocation) location).workshop.getBlueprint(item);
-			if (BI != null ){
-				boolean hasResources = true;
-				for (ResourcePackage RP : BI.components){
-					if(!inventory.hasItems(RP.resource, RP.rarityID, RP.amount)){
-						hasResources = false;
-					}
-				}
-				if (hasResources){
-					for (ResourcePackage RP : BI.components){
-						inventory.removeItems(RP.resource, RP.rarityID, RP.amount);
-					}
-					equips.addItem(item);
-				}	
-			}
-		}
-
-	}
+	//	public static void craftItem(Item item){
+	//		if(location instanceof TownLocation){
+	//			Blueprint BI = ((TownLocation) location).workshop.getBlueprint(item);
+	//			if (BI != null ){
+	//				boolean hasResources = true;
+	//				for (ResourcePackage RP : BI.components){
+	//					if(!inventory.hasItems(RP.resource, RP.rarityID, RP.amount)){
+	//						hasResources = false;
+	//					}
+	//				}
+	//				if (hasResources){
+	//					for (ResourcePackage RP : BI.components){
+	//						inventory.removeItems(RP.resource, RP.rarityID, RP.amount);
+	//					}
+	//					equips.addItem(item);
+	//				}	
+	//			}
+	//		}
+	//
+	//	}
 
 	public static String rollCrate(Crate C){
 		if (misc.checkKeys(C.costToRoll)){
@@ -348,7 +252,7 @@ public class PLAYER {
 		}
 		return "Not enough keys.";
 	}
-	
+
 	public static void processReward(Reward reward){
 		misc.addKeys(reward.keys);
 		misc.addFire(reward.fire);
@@ -372,7 +276,7 @@ public class PLAYER {
 			if (TR != null){
 				if (coins.totalMoney >= TR.totalCost){
 					location = loc;
-					coins.loseMoney(TR.totalCost);
+					coins.remove(TR.totalCost);
 					return TR.toString();
 				}
 				return "Not enough money to commence quick travel.";
